@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sponsor A Child — Sewa USA</title>
+<meta name="description" content="Rewrite a story. Transform a life. Sponsor a child through Sewa USA's education initiative and help close the drop-out gap." />
+<meta property="og:title" content="Sponsor A Child — Sewa USA" />
+<meta property="og:description" content="Rewrite a story. Transform a life." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a/v1/448f3508-67b2-4ae0-bd14-60011fb060d4/2ab2967a-8423-4c54-9528-4b9c3350a4ed/sac-logo.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#FCFBF7',
+          ink: '#3B2E22',
+          forest: '#166534',
+          'forest-deep': '#0f4a25',
+          terracotta: '#F4A261',
+          river: '#78A1BB',
+          sunburst: '#F4D35E',
+          muted: '#7a6f60',
+          border: '#e5ddcc',
+        },
+        fontFamily: {
+          serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+          hand: ['Caveat', 'cursive'],
+        },
+        borderRadius: { '4xl': '36px', '5xl': '48px' },
+        animation: {
+          'fade-up': 'fadeUp .9s ease-out both',
+          'float': 'floatSlow 8s ease-in-out infinite',
+          'bob': 'bob 3s ease-in-out infinite',
+        },
+        keyframes: {
+          fadeUp: { '0%': { opacity: 0, transform: 'translateY(24px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+          floatSlow: { '0%,100%': { transform: 'translateY(0) rotate(0)' }, '50%': { transform: 'translateY(-14px) rotate(2deg)' } },
+          bob: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-8px)' } },
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html, body { background: #FCFBF7; color: #3B2E22; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, .font-serif { font-family: 'DM Serif Display', Georgia, serif; letter-spacing: -0.02em; }
+  .font-hand { font-family: 'Caveat', cursive; }
+  .paper {
+    background-color: #FCFBF7;
+    background-image:
+      radial-gradient(ellipse at top left, rgba(244,211,94,.18), transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(244,162,97,.14), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 0.08 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  .grain { position: relative; isolation: isolate; }
+  .grain::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.2  0 0 0 0 0.15  0 0 0 0 0.1  0 0 0 0.35 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply; opacity: .45;
+  }
+  .blob { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+  .blob-2 { border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%; }
+  .blob-3 { border-radius: 30% 70% 50% 50% / 60% 40% 60% 40%; }
+  .polaroid {
+    background: #fffdf7; padding: 14px 14px 22px; border-radius: 6px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 20px 40px -20px rgba(60,40,20,0.25), 0 4px 12px -4px rgba(60,40,20,0.15);
+    transition: transform .5s ease;
+  }
+  .polaroid:hover { transform: rotate(0) translateY(-8px) !important; }
+  .card-soft {
+    background: #fffdf7; border-radius: 36px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 30px 60px -30px rgba(60,40,20,0.18), 0 8px 20px -12px rgba(60,40,20,0.1);
+  }
+  .btn-terracotta {
+    display: inline-flex; align-items: center; gap: .5rem; padding: .9rem 1.6rem;
+    background: #F4A261; color: #2a1a10; font-weight: 600; border-radius: 999px;
+    box-shadow: 0 10px 30px -12px rgba(244,162,97,.7);
+    transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+  }
+  .btn-terracotta:hover { transform: translateY(-2px); background: #e88f45; box-shadow: 0 18px 38px -14px rgba(244,162,97,.8); }
+  .btn-forest { display: inline-flex; align-items: center; gap: .5rem; padding: .9rem 1.6rem; background: #166534; color: #fdfaf2; font-weight: 600; border-radius: 999px; transition: all .3s ease; }
+  .btn-forest:hover { background: #0f4a25; transform: translateY(-2px); }
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.4rem;
+    background: transparent; color: #166534; font-weight: 600; border: 1.5px solid #166534; border-radius: 999px;
+    transition: all .3s ease;
+  }
+  .btn-ghost:hover { background: #166534; color: #fdfaf2; }
+  .nav-link { position: relative; padding: .5rem .25rem; color: #3B2E22; transition: color .25s ease; }
+  .nav-link::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -4px; height: 2px; background: #F4A261; border-radius: 2px; transition: right .35s cubic-bezier(.7,.1,.2,1); }
+  .nav-link:hover { color: #166534; }
+  .nav-link:hover::after, .nav-link.active::after { right: 0; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+<body class="paper">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 backdrop-blur-xl bg-cream/70 border-b border-border/60">
+  <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between gap-6">
+    <a href="#top" class="flex items-center gap-3">
+      <img src="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a/v1/448f3508-67b2-4ae0-bd14-60011fb060d4/2ab2967a-8423-4c54-9528-4b9c3350a4ed/sac-logo.png" alt="Sewa USA — Sponsor A Child" class="h-10 w-auto" />
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#top" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#how" class="nav-link">How it Works</a>
+      <a href="#directory" class="nav-link">Sponsorship</a>
+      <a href="#donate" class="nav-link">Donate</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="https://sac.sewausa.org/login" target="_blank" rel="noreferrer" class="hidden sm:inline-flex btn-ghost text-sm py-2 px-4">Sponsor Login</a>
+      <a href="#donate" class="btn-terracotta text-sm py-2 px-5">Donate Now</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0" style="background: radial-gradient(1200px 700px at 85% 10%, rgba(244,211,94,.55), transparent 60%), radial-gradient(900px 600px at 10% 90%, rgba(120,161,187,.35), transparent 55%), linear-gradient(180deg, #FCFBF7 0%, #f7f2e6 60%, #FCFBF7 100%);"></div>
+  <svg class="absolute -left-24 top-32 w-[420px] opacity-60 pointer-events-none animate-float" viewBox="0 0 400 400" fill="none">
+    <path d="M40 200 C 40 90, 120 40, 220 60 S 380 160, 340 260 S 180 380, 100 320 S 40 240, 40 200 Z" fill="rgba(244,211,94,.45)" />
+  </svg>
+  <svg class="absolute -right-40 bottom-24 w-[520px] opacity-50 pointer-events-none animate-float" style="animation-delay:-4s" viewBox="0 0 400 400" fill="none">
+    <path d="M60 220 C 40 120, 160 30, 260 70 S 380 220, 320 300 S 140 360, 80 300 S 80 260, 60 220 Z" fill="rgba(244,162,97,.35)" />
+  </svg>
+
+  <div class="relative mx-auto max-w-6xl px-6 pt-28 pb-40 md:pt-36 md:pb-56 grid md:grid-cols-12 gap-10 items-center">
+    <div class="md:col-span-7">
+      <p class="font-hand text-2xl text-terracotta animate-fade-up">a Sewa USA initiative · est. 2004</p>
+      <h1 class="mt-4 font-serif text-6xl md:text-8xl leading-[0.95] text-ink animate-fade-up" style="animation-delay:.1s">
+        Rewrite a Story.<br />
+        <span class="italic text-forest">Transform</span> a Life.
+      </h1>
+      <p class="mt-8 max-w-xl text-lg text-ink/75 animate-fade-up" style="animation-delay:.2s">
+        <span class="font-serif text-2xl text-ink">12.6% of children</span> drop out of school prematurely in India. Help us close the gap — for just one.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4 animate-fade-up" style="animation-delay:.3s">
+        <a href="#directory" class="btn-terracotta text-base">Meet the Children →</a>
+        <a href="#how" class="btn-ghost text-base">How it works</a>
+      </div>
+    </div>
+
+    <div class="md:col-span-5 relative hidden md:block animate-fade-up" style="animation-delay:.25s">
+      <div class="absolute -inset-8 bg-terracotta/25 blob animate-float"></div>
+      <div class="absolute -bottom-10 -left-6 h-40 w-40 bg-sunburst/40 blob" style="animation-delay:-2s"></div>
+      <div class="relative overflow-hidden rounded-4xl shadow-2xl ring-1 ring-black/5">
+        <img src="https://dkx8xz7sz3t1z.cloudfront.net/campaign/image/medium-bb7ab77296aa118551af8fcedd0421d2.jpg" alt="Children learning" class="h-[460px] w-full object-cover" />
+      </div>
+      <div class="absolute -top-4 -right-4 rotate-6 bg-cream px-4 py-2 rounded-2xl shadow-lg border border-black/5">
+        <p class="font-hand text-xl text-forest leading-none">est. 2004</p>
+      </div>
+    </div>
+
+    <svg class="absolute left-1/2 -translate-x-1/2 bottom-8 w-14 h-24 text-forest animate-bob" viewBox="0 0 60 100" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <path d="M30 5 C 26 30, 34 55, 30 82" stroke-dasharray="4 6" />
+      <path d="M18 72 L 30 88 L 42 72" />
+    </svg>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="relative mx-auto max-w-6xl px-6 py-24">
+  <div class="flex items-end justify-between flex-wrap gap-6 mb-14">
+    <div>
+      <p class="font-hand text-2xl text-terracotta">why families trust us</p>
+      <h2 class="font-serif text-5xl md:text-6xl mt-2 max-w-xl">Impact you can hold in your hand.</h2>
+    </div>
+    <p class="max-w-sm text-muted">Every rupee traced, every child mentored, every graduation celebrated — for two decades.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="grain p-10 blob transition-transform duration-500 hover:-translate-y-2" style="background: rgba(22,101,52,.10)">
+      <svg viewBox="0 0 60 60" class="h-14 w-14 text-forest" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 48 C 12 20, 32 8, 52 12 C 50 34, 34 50, 12 48 Z" /><path d="M12 48 L 40 20" /></svg>
+      <p class="mt-6 text-xs uppercase tracking-[0.2em] text-forest">GuideStar Platinum</p>
+      <h3 class="mt-2 font-serif text-2xl leading-tight">Verified Financial Transparency</h3>
+      <p class="mt-3 text-sm text-ink/75">Independently audited. Every dollar traceable to the classroom it changes.</p>
+    </div>
+    <div class="grain p-10 blob-2 transition-transform duration-500 hover:-translate-y-2" style="background: rgba(244,162,97,.14)">
+      <svg viewBox="0 0 60 60" class="h-14 w-14 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 50 C 6 34, 8 14, 22 14 C 28 14, 30 20, 30 22 C 30 20, 32 14, 38 14 C 52 14, 54 34, 30 50 Z" /></svg>
+      <p class="mt-6 text-xs uppercase tracking-[0.2em] text-terracotta">PayPal Giving Fund</p>
+      <h3 class="mt-2 font-serif text-2xl leading-tight">Secured Donations</h3>
+      <p class="mt-3 text-sm text-ink/75">End-to-end encrypted payments with instant tax-deductible receipts in your inbox.</p>
+    </div>
+    <div class="grain p-10 blob-3 transition-transform duration-500 hover:-translate-y-2" style="background: rgba(120,161,187,.16)">
+      <svg viewBox="0 0 60 60" class="h-14 w-14 text-river" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 52 L 30 30" /><path d="M30 30 C 30 20, 20 16, 12 18 C 12 28, 22 32, 30 30 Z" /><path d="M30 34 C 30 24, 40 20, 48 22 C 48 32, 38 36, 30 34 Z" /><path d="M20 52 L 40 52" /></svg>
+      <p class="mt-6 text-xs uppercase tracking-[0.2em] text-river">20 years of data</p>
+      <h3 class="mt-2 font-serif text-2xl leading-tight">Proven Longitudinal Results</h3>
+      <p class="mt-3 text-sm text-ink/75">83% of alumni complete higher education — five times the regional average.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECTORY -->
+<section id="directory" class="relative py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="max-w-2xl">
+      <p class="font-hand text-2xl text-terracotta">meet a child · today</p>
+      <h2 class="font-serif text-5xl md:text-6xl mt-2">Four hearts. Four futures.</h2>
+      <p class="mt-4 text-muted text-lg">These are real children awaiting a sponsor. Pick one story — begin one journey.</p>
+    </div>
+    <div class="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4" id="children-grid"></div>
+    <div class="mt-10 text-center">
+      <a href="https://sac.sewausa.org/sponsorships?status=unsponsored" target="_blank" rel="noreferrer" class="btn-ghost">View all sponsorship opportunities →</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIY BLOBS -->
+<section class="relative py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="flex items-end justify-between flex-wrap gap-6 mb-14">
+      <div>
+        <p class="font-hand text-2xl text-terracotta">DIY community campaigns</p>
+        <h2 class="font-serif text-5xl md:text-6xl mt-2 max-w-2xl">Small circles.<br />Extraordinary results.</h2>
+      </div>
+      <a href="#how" class="btn-ghost">Start your own campaign</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center" id="funding-grid"></div>
+  </div>
+</section>
+
+<!-- ALUMNI STORIES -->
+<section class="relative py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <p class="font-hand text-2xl text-terracotta">alumni voices</p>
+    <h2 class="font-serif text-5xl md:text-6xl mt-2 max-w-3xl">Stories that finish the sentence you started.</h2>
+  </div>
+  <div class="mt-14 overflow-x-auto pb-6 scroll-smooth no-scrollbar">
+    <div class="flex gap-8 px-6 snap-x snap-mandatory" id="stories-row"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="relative py-24" style="background: #f5efe0">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="max-w-2xl">
+      <p class="font-hand text-2xl text-terracotta">from our sponsors</p>
+      <h2 class="font-serif text-5xl md:text-6xl mt-2">The other half of the story.</h2>
+      <p class="mt-4 text-muted text-lg">Real families who chose to become part of another family's future.</p>
+    </div>
+    <div class="mt-14 grid md:grid-cols-3 gap-8" id="testimonials-grid"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="relative py-24">
+  <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-5 gap-12 items-center">
+    <div class="md:col-span-2">
+      <p class="font-hand text-2xl text-terracotta">our heart · since 2004</p>
+      <h2 class="font-serif text-5xl md:text-6xl mt-2 leading-[0.95]">Where classrooms preserve <span class="italic text-forest">looms</span>.</h2>
+      <p class="mt-6 text-ink/80 leading-relaxed">In Karnataka, daughters of handloom weavers face an impossible choice: leave school to learn the loom, or leave the loom to finish school. Our sponsorship pairs each child with a scholarship <em>and</em> an artisan grant — so the family's craft survives the same generation that breaks its poverty cycle.</p>
+      <p class="mt-4 text-ink/80 leading-relaxed">We call it <span class="font-serif text-forest">continuity education</span>. 79% of our weaver-family graduates return home as teachers, designers, and cooperative leaders.</p>
+    </div>
+    <div class="md:col-span-3 grain overflow-hidden rounded-4xl">
+      <img src="https://dkx8xz7sz3t1z.cloudfront.net/asset/29426/data/45617e476d227ae5e5257bfe2b81fa2b.jpg" alt="Sewa community" class="w-full aspect-[16/10] object-cover" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="relative py-24" style="background: rgba(120,161,187,.10)">
+  <div class="mx-auto max-w-6xl px-6">
+    <p class="font-hand text-2xl text-terracotta">the odyssey</p>
+    <h2 class="font-serif text-5xl md:text-6xl mt-2 max-w-2xl">How sponsorship works.</h2>
+    <div class="mt-14 grid md:grid-cols-4 gap-8" id="steps-grid"></div>
+  </div>
+</section>
+
+<!-- LATEST NEWS -->
+<section class="relative py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="flex items-end justify-between flex-wrap gap-6 mb-14">
+      <div>
+        <p class="font-hand text-2xl text-terracotta">latest news</p>
+        <h2 class="font-serif text-5xl md:text-6xl mt-2 max-w-2xl">Field reports & recognition.</h2>
+      </div>
+      <a href="https://sac.sewausa.org/news-media" target="_blank" rel="noreferrer" class="btn-ghost">All updates →</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10" id="news-grid"></div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section class="relative py-24" style="background: #f0e8d4">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="flex items-end justify-between flex-wrap gap-6 mb-14">
+      <div>
+        <p class="font-hand text-2xl text-terracotta">follow along</p>
+        <h2 class="font-serif text-5xl md:text-6xl mt-2">Live from the field.</h2>
+      </div>
+      <div class="flex gap-3">
+        <a href="https://www.facebook.com/1555099934762689" target="_blank" rel="noreferrer" class="btn-ghost text-sm">Facebook</a>
+        <a href="https://www.instagram.com/sewainternationalusa/" target="_blank" rel="noreferrer" class="btn-ghost text-sm">Instagram</a>
+        <a href="https://x.com/child_sewa" target="_blank" rel="noreferrer" class="btn-ghost text-sm">X / Twitter</a>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8" id="social-grid"></div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section id="donate" class="relative py-24">
+  <div class="mx-auto max-w-5xl px-6">
+    <p class="font-hand text-2xl text-terracotta">secure giving hub</p>
+    <h2 class="font-serif text-5xl md:text-6xl mt-2">Give today.</h2>
+    <div class="mt-12 card-soft grain p-8 md:p-12">
+      <div class="flex flex-wrap gap-3">
+        <button type="button" class="freq-btn btn-forest text-sm" data-active="true">One-Time Gift</button>
+        <button type="button" class="freq-btn btn-ghost text-sm">Monthly Sponsorship</button>
+        <button type="button" class="freq-btn btn-ghost text-sm">Yearly</button>
+      </div>
+      <div class="mt-8 grid sm:grid-cols-4 gap-3" id="amount-grid">
+        <button type="button" class="amt-btn btn-ghost py-4 flex flex-col items-start" data-v="50"><span class="font-serif text-2xl">$50</span><span class="text-xs opacity-70">Textbook Kit</span></button>
+        <button type="button" class="amt-btn btn-ghost py-4 flex flex-col items-start" data-v="150"><span class="font-serif text-2xl">$150</span><span class="text-xs opacity-70">Annual Uniforms</span></button>
+        <button type="button" class="amt-btn btn-ghost py-4 flex flex-col items-start" data-v="360" data-active="true"><span class="font-serif text-2xl">$360</span><span class="text-xs opacity-70">Full School Year</span></button>
+        <button type="button" class="amt-btn btn-ghost py-4 flex flex-col items-start" data-v="custom"><span class="font-serif text-2xl">Custom</span><span class="text-xs opacity-70">Any amount</span></button>
+      </div>
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <label class="block">
+          <span class="text-xs uppercase tracking-widest text-forest">Full name</span>
+          <input type="text" class="mt-2 w-full rounded-4xl border border-border bg-cream px-6 py-4 outline-none focus:border-forest transition" placeholder="Your name" />
+        </label>
+        <label class="block">
+          <span class="text-xs uppercase tracking-widest text-forest">Email</span>
+          <input type="email" class="mt-2 w-full rounded-4xl border border-border bg-cream px-6 py-4 outline-none focus:border-forest transition" placeholder="you@email.com" />
+        </label>
+        <label class="block md:col-span-2">
+          <span class="text-xs uppercase tracking-widest text-forest">Allocation</span>
+          <select class="mt-2 w-full rounded-4xl border border-border bg-cream px-6 py-4 outline-none focus:border-forest transition">
+            <option>General Fund</option>
+            <option>DIY Campaign</option>
+            <option>Specific Region</option>
+          </select>
+        </label>
+      </div>
+      <button class="mt-8 btn-terracotta w-full justify-center text-base">Continue to secure payment →</button>
+      <div class="mt-8 grid sm:grid-cols-3 gap-4 text-sm text-ink/70">
+        <div class="flex items-center gap-2"><span class="text-forest">✓</span> 100% Tax Deductible</div>
+        <div class="flex items-center gap-2"><span class="text-forest">✓</span> Encrypted Payments</div>
+        <div class="flex items-center gap-2"><span class="text-forest">✓</span> Charity Navigator Verified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-24">
+  <div class="mx-auto max-w-6xl px-6 grid lg:grid-cols-5 gap-10 items-stretch">
+    <div class="lg:col-span-3 card-soft grain p-10 md:p-14">
+      <p class="font-hand text-2xl text-terracotta">questions? talk to us.</p>
+      <h2 class="font-serif text-5xl md:text-6xl mt-2 leading-[0.95]">A real human<br /><span class="italic text-forest">writes back.</span></h2>
+      <p class="mt-6 text-lg text-muted max-w-lg">Sponsorship, DIY campaigns, or tax receipts — we usually reply within one working day.</p>
+      <div class="mt-10 grid sm:grid-cols-3 gap-6">
+        <div><p class="text-xs uppercase tracking-widest text-forest">Call</p><p class="mt-1.5"><a href="tel:3026597392" class="text-forest hover:text-terracotta">302-659-7392</a></p></div>
+        <div><p class="text-xs uppercase tracking-widest text-forest">Email</p><p class="mt-1.5"><a href="mailto:sac-support@sewausa.org" class="text-forest hover:text-terracotta break-all">sac-support@sewausa.org</a></p></div>
+        <div><p class="text-xs uppercase tracking-widest text-forest">Mail</p><p class="mt-1.5">P.O. Box 820867<br />Houston, TX 77282-0867</p></div>
+      </div>
+    </div>
+    <aside class="lg:col-span-2 rounded-4xl p-10 grain flex flex-col justify-between" style="background: rgba(22,101,52,.10)">
+      <div>
+        <p class="font-hand text-2xl text-terracotta">trust & transparency</p>
+        <h3 class="font-serif text-3xl mt-2">Donate with confidence.</h3>
+        <ul class="mt-6 space-y-4 text-ink/80">
+          <li class="flex gap-3"><span class="text-forest">✓</span> 3× consecutive 4-star Charity Navigator rating</li>
+          <li class="flex gap-3"><span class="text-forest">✓</span> GuideStar Platinum for transparency</li>
+          <li class="flex gap-3"><span class="text-forest">✓</span> PayPal-secured payments — never store card details</li>
+          <li class="flex gap-3"><span class="text-forest">✓</span> 100% tax-deductible · EIN 20-0638718</li>
+        </ul>
+      </div>
+      <p class="mt-8 text-xs text-ink/60">Sewa International is a 501(c)(3) public charity.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="relative py-24">
+  <div class="mx-auto max-w-5xl px-6 text-center">
+    <h2 class="font-serif text-5xl md:text-7xl leading-tight">One child. <span class="italic text-terracotta">One year.</span><br />An entire generation, changed.</h2>
+    <p class="mt-6 text-lg text-muted max-w-xl mx-auto">$360 covers a complete academic year — books, uniforms, tuition, and meals.</p>
+    <a href="#donate" class="mt-10 btn-terracotta text-lg inline-flex">Begin sponsorship →</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="mt-8 border-t border-border/70" style="background:#f4eeda">
+  <div class="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-5">
+    <div class="md:col-span-2">
+      <img src="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a/v1/448f3508-67b2-4ae0-bd14-60011fb060d4/2ab2967a-8423-4c54-9528-4b9c3350a4ed/sac-logo.png" alt="Sewa USA" class="h-11 w-auto" />
+      <p class="mt-4 text-sm text-muted max-w-sm">A grassroots initiative rewriting the story of children across India — one sponsor, one letter, one graduation at a time.</p>
+      <p class="mt-6 font-hand text-2xl text-forest">"Seva is not charity. It is family."</p>
+    </div>
+    <div><h4 class="font-serif text-lg text-forest mb-4">Explore</h4><ul class="space-y-2 text-sm"><li><a href="#about" class="hover:text-forest">About Us</a></li><li><a href="#how" class="hover:text-forest">How it Works</a></li><li><a href="#directory" class="hover:text-forest">Sponsor a Child</a></li><li><a href="#donate" class="hover:text-forest">Donate</a></li><li><a href="#contact" class="hover:text-forest">Contact</a></li></ul></div>
+    <div><h4 class="font-serif text-lg text-forest mb-4">Programs</h4><ul class="space-y-2 text-sm"><li><a href="#how" class="hover:text-forest">DIY Campaigns</a></li><li><a href="#" class="hover:text-forest">Alumni Stories</a></li><li><a href="#about" class="hover:text-forest">Anubhuthi Camp</a></li><li><a href="#contact" class="hover:text-forest">FAQs</a></li></ul></div>
+    <div><h4 class="font-serif text-lg text-forest mb-4">Legal</h4><ul class="space-y-2 text-sm"><li><a href="#" class="hover:text-forest">Privacy Policy</a></li><li><a href="#contact" class="hover:text-forest">Tax Receipts</a></li><li><a href="#about" class="hover:text-forest">Transparency</a></li></ul></div>
+  </div>
+  <div class="border-t border-border/70">
+    <div class="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted">
+      <p>© <span id="yr"></span> Sewa International USA — 501(c)(3) · EIN 20-0638718</p>
+      <p>Houston, TX · P.O. Box 820867 · 77282-0867</p>
+    </div>
+  </div>
+</footer>
+
+<!-- STORY MODAL -->
+<div id="story-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" data-close></div>
+  <div class="relative card-soft grain max-w-2xl w-full p-10 md:p-14">
+    <button class="absolute top-6 right-6 h-9 w-9 rounded-full bg-cream border border-border hover:bg-terracotta hover:text-cream transition" data-close>×</button>
+    <div id="story-body"></div>
+  </div>
+</div>
+
+<script>
+  const CHILDREN = [
+    { id: "sravanthika-d", name: "D Sravanthika", age: 15, region: "Tamil Nadu", grade: "Class 10", img: "https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/218852/image/medium-8d172b1e6def30ea981f5f1a055b3782.jpeg", dream: "Determined to become the first graduate in her family." },
+    { id: "vechha-mouthwika", name: "Vechha Mouthwika", age: 15, region: "Telangana", grade: "Class 10", img: "https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/219159/image/medium-bfac03f928571c7fd543dd84e1103cbd.jpeg", dream: "Dreams of studying medicine and healing her village." },
+    { id: "chinta-ruthvika", name: "Chinta Ruthvika", age: 14, region: "Telangana", grade: "Class 9", img: "https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/219201/image/medium-f0cded7cf1bddbce9bc255cc1a8fc6ec.jpeg", dream: "Top of her class — wants to become a teacher." },
+    { id: "sahana-sidram", name: "Sahana Bhajantri", age: 18, region: "Karnataka", grade: "Grade 12", img: "https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/218340/image/medium-bd5af3107e835bf3cd2fb503e1fe27f0.jpg", dream: "Weaver's daughter preparing for engineering entrance." },
+  ];
+  const STORIES = [
+    { id: "22/KA/G-1400", name: "Monica A.", img: "https://dkx8xz7sz3t1z.cloudfront.net/asset/27716/data/6277cde681d93f0c8675df35bac066cf.jpg", quote: "From an auto-driver's daughter to a 99% Math Scholar.", detail: "A perfect score in Mathematics — 99% and 97% across boards while her family navigated her father's accident and her mother's second job.", region: "Karnataka" },
+    { id: "22/KA/G-741", name: "Ananya", img: "https://dkx8xz7sz3t1z.cloudfront.net/asset/27714/data/331024fa2828f82dd29251747a1c94b2.jpg", quote: "My parents' hard work deserved a daughter who wouldn't quit.", detail: "Daughter of a milkman and a domestic worker with health struggles — she stayed at the top of her class through it all.", region: "Karnataka" },
+    { id: "22/KA/B-86", name: "Kishor Gowda", img: "https://dkx8xz7sz3t1z.cloudfront.net/asset/27715/data/a8f554cb67f3658ee01b8b342a94885d.jpg", quote: "I lost my father to COVID. Sewa made sure I didn't lose my future.", detail: "97% and 95% across boards while supporting his mother and younger brother through immense grief.", region: "Karnataka" },
+    { id: "22/KA/B-3404", name: "Navaneeth N.", img: "https://dkx8xz7sz3t1z.cloudfront.net/asset/27717/data/01fb2fcf7b9ec2c9096dc4b37b5fb3a2.jpg", quote: "A priest's son who lost everything — and still scored 95% in Class 12.", detail: "Volleyball, cricket, and top academic marks — Navaneeth carries a family of six on his shoulders.", region: "Karnataka" },
+  ];
+  const TESTIMONIALS = [
+    { name: "Shweta Deshpande", role: "Sponsor · Two Children, Madhya Pradesh", img: "https://s3.amazonaws.com/assets.reachapp.co/uploads/000/225/464/Shweta_Deshpande.original.jpeg?1639131280", quote: "One child wanted to be a teacher, the other a collector. It was encouraging to see them working hard against all odds." },
+    { name: "Nageswar Pusuluri", role: "Sponsor · New Jersey", img: "https://s3.amazonaws.com/assets.reachapp.co/assets/000/021/839/Nageswar_Rao_Pusulri_PIC.original.JPG?1627627560", quote: "Sponsor A Child gave us a way to give back that felt real. We speak to the children. We see the change." },
+    { name: "Mrunal Koranne", role: "Sponsor · New Jersey", img: "https://s3.amazonaws.com/assets.reachapp.co/assets/000/021/841/Mrunal_Koranne_pic.original.jpeg?1627627584", quote: "I sponsor the education of a girl child as a symbol of worshiping a living Lakshmi." },
+  ];
+  const NEWS = [
+    { date: "Aug 2025", tag: "Award", title: "Sponsor A Child receives Momentum Award", body: "Recognized as Best Supporting Organization by Global Illumine Foundation for our commitment to enriching childhoods.", img: "https://dkx8xz7sz3t1z.cloudfront.net/asset/29426/data/45617e476d227ae5e5257bfe2b81fa2b.jpg", href: "https://sac.sewausa.org/news-media/award-for-sac" },
+    { date: "May 15, 2024", tag: "Field Report", title: "2nd Residential Anubhuthi Camp", body: "51 children from 6 states gathered in Kuppam, Andhra Pradesh for a week of nature, STEM exploration, and reflective growth.", img: "https://dkx8xz7sz3t1z.cloudfront.net/campaign/image/medium-bb7ab77296aa118551af8fcedd0421d2.jpg", href: "https://sac.sewausa.org/news-media/anubhuthi-camp" },
+  ];
+  const SOCIAL = [
+    { platform: "Instagram", handle: "@sewainternationalusa", body: "Meet the smiles behind every sponsorship. 💛 #SponsorAChild", likes: 342, tint: "rgba(244,162,97,.14)" },
+    { platform: "Facebook", handle: "Sponsor A Child · 1,760 followers", body: "Silver Anniversary campaign just crossed $1,313 — thank you.", likes: 128, tint: "rgba(120,161,187,.18)" },
+    { platform: "X / Twitter", handle: "@child_sewa", body: "Weavers of Karnataka: their children want school, not looms. Stand with them.", likes: 89, tint: "rgba(244,211,94,.35)" },
+  ];
+  const STEPS = [
+    { n: 1, t: "Select a Child", b: "Filter by age, gender, region — read every profile." },
+    { n: 2, t: "Secure Schedule", b: "Set a recurring donation — monthly, quarterly, or yearly." },
+    { n: 3, t: "Progress Reports", b: "Receive academic reports and letters from your sponsored child." },
+    { n: 4, t: "Long-Term Impact", b: "Track community outcomes for years, not months." },
+  ];
+
+  const $ = (s) => document.querySelector(s);
+  const html = (strings, ...v) => String.raw({ raw: strings }, ...v);
+
+  $("#children-grid").innerHTML = CHILDREN.map((c, i) => `
+    <article class="polaroid" style="transform: rotate(${i % 2 === 0 ? -2 : 2}deg)">
+      <div class="grain overflow-hidden" style="border-radius:4px">
+        <img src="${c.img}" alt="${c.name}" loading="lazy" class="w-full aspect-[4/5] object-cover" />
+      </div>
+      <div class="mt-4 flex items-baseline justify-between">
+        <p class="font-hand text-2xl">${c.name}, ${c.age}</p>
+        <span class="text-xs uppercase tracking-widest text-forest">${c.region.split(" ")[0]}</span>
+      </div>
+      <p class="text-xs text-muted mt-0.5">${c.region} · ${c.grade}</p>
+      <p class="mt-2 text-sm text-ink/80 italic">"${c.dream}"</p>
+      <a href="#donate" class="mt-4 btn-terracotta w-full justify-center text-sm py-2.5">Sponsor Me</a>
+    </article>
+  `).join("");
+
+  $("#funding-grid").innerHTML = [
+    { tint: "rgba(244,211,94,.4)", title: "Silver Anniversary", subtitle: "25 Years of Support", raised: 1111, goal: 2500, donors: 38, rot: -3 },
+    { tint: "rgba(120,161,187,.35)", title: "Maryland Support Fund", subtitle: "Tripura Tribal Children", raised: 1080, goal: 25000, donors: 22, rot: 2 },
+  ].map(f => {
+    const pct = Math.round(f.raised / f.goal * 100);
+    return `<div class="relative"><div class="grain blob p-12 md:p-16 transition-transform duration-500 hover:-translate-y-2" style="background:${f.tint}; transform: rotate(${f.rot}deg)"><div style="transform: rotate(${-f.rot}deg)">
+      <p class="font-hand text-xl text-forest">community · DIY campaign</p>
+      <h3 class="font-serif text-3xl md:text-4xl mt-2">${f.title}</h3>
+      <p class="text-ink/70">${f.subtitle}</p>
+      <div class="mt-8">
+        <div class="flex items-baseline justify-between"><span class="font-serif text-4xl">$${f.raised.toLocaleString()}</span><span class="text-sm text-ink/60">of $${f.goal.toLocaleString()}</span></div>
+        <div class="mt-3 h-2 rounded-full bg-cream/70 overflow-hidden"><div class="h-full bg-terracotta rounded-full" style="width:${pct}%"></div></div>
+        <p class="mt-3 text-xs text-ink/60">${pct}% funded · ${f.donors} donors</p>
+      </div>
+      <button class="mt-6 btn-forest text-sm">Give to this campaign</button>
+    </div></div></div>`;
+  }).join("");
+
+  $("#stories-row").innerHTML = STORIES.map((s, i) => `
+    <button data-story="${i}" class="snap-start text-left shrink-0 w-[85vw] md:w-[36rem] card-soft grain p-10 md:p-14 transition-transform duration-500 hover:-translate-y-1" style="background:${i % 2 === 0 ? '#f4ecd4' : '#dceaf1'}">
+      <div class="flex items-start gap-6">
+        <img src="${s.img}" alt="${s.name}" class="h-20 w-20 rounded-full object-cover border-4 border-cream shadow-md shrink-0" />
+        <div><span class="font-hand text-5xl text-terracotta leading-none">"</span>
+        <p class="font-serif text-2xl md:text-3xl leading-snug mt-1">${s.quote}</p></div>
+      </div>
+      <div class="mt-8 flex items-center justify-between">
+        <div><p class="font-serif text-lg">${s.name}</p><p class="text-xs text-muted uppercase tracking-widest">SAC ID ${s.id} · ${s.region}</p></div>
+        <span class="text-forest text-sm underline underline-offset-4">Read full story →</span>
+      </div>
+    </button>
+  `).join("");
+
+  $("#testimonials-grid").innerHTML = TESTIMONIALS.map(t => `
+    <figure class="card-soft grain p-8 flex flex-col">
+      <span class="font-hand text-6xl text-terracotta leading-none">"</span>
+      <blockquote class="font-serif text-xl leading-snug mt-1 flex-1">${t.quote}</blockquote>
+      <figcaption class="mt-8 flex items-center gap-4 pt-6 border-t border-border">
+        <img src="${t.img}" alt="${t.name}" class="h-14 w-14 rounded-full object-cover border-2 border-cream shadow" />
+        <div><p class="font-serif text-lg">${t.name}</p><p class="text-xs text-muted uppercase tracking-widest">${t.role}</p></div>
+      </figcaption>
+    </figure>
+  `).join("");
+
+  $("#news-grid").innerHTML = NEWS.map(n => `
+    <a href="${n.href}" target="_blank" rel="noreferrer" class="group card-soft grain overflow-hidden flex flex-col transition-transform duration-500 hover:-translate-y-1">
+      <div class="overflow-hidden"><img src="${n.img}" alt="${n.title}" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700" /></div>
+      <div class="p-8 flex-1 flex flex-col">
+        <div class="flex items-center gap-3 text-xs uppercase tracking-widest">
+          <span class="px-3 py-1 rounded-full text-terracotta" style="background:rgba(244,162,97,.15)">${n.tag}</span>
+          <span class="text-muted">${n.date}</span>
+        </div>
+        <h3 class="mt-4 font-serif text-2xl md:text-3xl leading-tight">${n.title}</h3>
+        <p class="mt-3 text-ink/70 flex-1">${n.body}</p>
+        <span class="mt-6 text-forest underline underline-offset-4">Read the full report →</span>
+      </div>
+    </a>
+  `).join("");
+
+  $("#social-grid").innerHTML = SOCIAL.map(p => `
+    <article class="grain p-8 rounded-4xl border border-border/60 flex flex-col" style="background:${p.tint}">
+      <div class="flex items-center justify-between"><span class="text-xs uppercase tracking-widest text-forest">${p.platform}</span></div>
+      <p class="mt-4 font-hand text-xl">${p.handle}</p>
+      <p class="mt-4 text-ink/80 font-serif text-lg leading-snug flex-1">${p.body}</p>
+      <div class="mt-6 pt-4 border-t border-ink/10 flex items-center justify-between text-sm text-ink/60"><span>♥ ${p.likes.toLocaleString()}</span><span>View post →</span></div>
+    </article>
+  `).join("");
+
+  $("#steps-grid").innerHTML = STEPS.map(s => `
+    <div class="card-soft grain p-8">
+      <div class="h-14 w-14 blob bg-forest text-cream flex items-center justify-center font-serif text-2xl">${s.n}</div>
+      <h3 class="mt-6 font-serif text-2xl">${s.t}</h3>
+      <p class="mt-2 text-ink/75 text-sm">${s.b}</p>
+    </div>
+  `).join("");
+
+  // Modal
+  const modal = $("#story-modal");
+  const openModal = (i) => {
+    const s = STORIES[i];
+    $("#story-body").innerHTML = `
+      <div class="flex items-center gap-5">
+        <img src="${s.img}" alt="${s.name}" class="h-20 w-20 rounded-full object-cover border-4 border-cream shadow" />
+        <div><p class="font-hand text-xl text-terracotta">Alumni · SAC ID ${s.id}</p><h3 class="font-serif text-4xl">${s.name}</h3></div>
+      </div>
+      <p class="mt-6 font-serif text-2xl leading-snug">"${s.quote}"</p>
+      <p class="mt-6 text-muted">${s.detail}</p>
+      <p class="mt-4 text-sm">Home region: <span class="text-forest">${s.region}</span></p>
+      <a href="#donate" class="mt-8 btn-terracotta inline-flex">Help another child like ${s.name.split(" ")[0]}</a>`;
+    modal.classList.remove("hidden"); modal.classList.add("flex");
+  };
+  document.querySelectorAll("[data-story]").forEach(b => b.addEventListener("click", () => openModal(+b.dataset.story)));
+  modal.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", () => { modal.classList.add("hidden"); modal.classList.remove("flex"); }));
+
+  // Donate toggles
+  const setActive = (group, target) => {
+    document.querySelectorAll(group).forEach(el => {
+      const on = el === target;
+      el.classList.toggle("btn-forest", on);
+      el.classList.toggle("btn-ghost", !on);
+      el.dataset.active = on ? "true" : "";
+    });
+  };
+  document.querySelectorAll(".freq-btn").forEach(b => b.addEventListener("click", () => setActive(".freq-btn", b)));
+  document.querySelectorAll(".amt-btn").forEach(b => b.addEventListener("click", () => setActive(".amt-btn", b)));
+
+  // Nav active state on scroll
+  const links = document.querySelectorAll("nav .nav-link");
+  const sections = ["top","about","how","directory","donate","contact"].map(id => document.getElementById(id));
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY + 120;
+    let current = "top";
+    sections.forEach(s => { if (s && s.offsetTop <= y) current = s.id; });
+    links.forEach(l => l.classList.toggle("active", l.getAttribute("href") === "#" + current));
+  }, { passive: true });
+
+  $("#yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
