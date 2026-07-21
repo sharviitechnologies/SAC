@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+<head><script>window.__sb_state = {"forwardPreviewErrors":true};</script><script src="/.webcontainer@runtime.87cf54cd.js"></script><script src="/.webcontainer@wc-api-script.js"></script><script>delete window.__sb_w;document.querySelectorAll('script').forEach(n=>n.remove());</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sewa USA — Sponsor A Child | Transforming Lives, One Child at a Time</title>
+<meta name="description" content="Empowering children across India through education — one sponsorship at a time. A program by Sewa International, 501(c)(3) registered." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --slate-900:#0f172a; --slate-800:#1e293b; --slate-700:#334155; --slate-600:#475569;
+    --slate-500:#64748b; --slate-400:#94a3b8; --slate-300:#cbd5e1; --slate-200:#e2e8f0; --slate-100:#f1f5f9; --slate-50:#f8fafc;
+    --amber-50:#fffbeb; --amber-100:#fef3c7; --amber-200:#fde68a; --amber-300:#fcd34d; --amber-400:#fbbf24; --amber-500:#f59e0b; --amber-600:#d97706; --amber-700:#b45309; --amber-800:#92400e; --amber-900:#78350f;
+    --sky-900:#0c4a6e; --sky-800:#075985;
+    --white:#fff; --line:#e2e8f0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--slate-800);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.2;color:var(--slate-900)}
+  .container{max-width:1200px;margin:0 auto;padding:0 24px}
+  .font-serif{font-family:'Playfair Display',serif}
+  .font-sans{font-family:'Inter',sans-serif}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'Inter',sans-serif;font-weight:600;border-radius:999px;transition:all .2s;cursor:pointer;border:none}
+  .btn-amber{background:var(--amber-500);color:#fff;padding:16px 32px}
+  .btn-amber:hover{background:var(--amber-600);box-shadow:0 8px 24px rgba(245,158,11,.3)}
+  .btn-outline{background:transparent;border:2px solid var(--slate-200);color:var(--slate-700);padding:14px 28px}
+  .btn-outline:hover{border-color:var(--amber-400)}
+  .btn-amber-sm{background:var(--amber-500);color:#fff;padding:12px 28px;font-size:.875rem}
+  .btn-amber-sm:hover{background:var(--amber-600)}
+  .btn-ghost{background:var(--amber-50);color:var(--amber-700);border:1px solid var(--amber-200);padding:12px 24px;font-size:.875rem}
+  .btn-ghost:hover{background:var(--amber-100)}
+
+  /* Nav */
+  nav.top{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(15,23,42,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+  nav.top .container{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .nav-brand{display:flex;align-items:center;gap:12px;cursor:pointer}
+  .nav-brand .logo{width:36px;height:36px;background:var(--amber-500);border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:1.1rem}
+  .nav-brand .name{font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.05rem}
+  .nav-brand .name span{display:block;font-size:.7rem;color:var(--slate-400);font-family:'Inter',sans-serif;font-weight:400}
+  .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+  .nav-link{position:relative;color:var(--slate-300);font-size:.875rem;font-weight:500;cursor:pointer;transition:color .2s}
+  .nav-link:hover{color:#fff}
+  .nav-link:after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--amber-500);transition:width .3s}
+  .nav-link:hover:after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .burger{display:none;background:none;border:none;cursor:pointer;color:#fff;padding:8px}
+  .burger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
+  .burger span+.span{margin-top:5px}
+  .mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;background:var(--slate-900);z-index:49;padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .mobile-nav a{display:block;padding:12px 0;color:var(--slate-300);font-weight:500;border-bottom:1px solid rgba(255,255,255,.06)}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,#0f172a,#1e293b 40%,#0c4a6e);position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:72px}
+  .hero .glow{position:absolute;top:25%;right:25%;width:384px;height:384px;background:rgba(245,158,11,.1);border-radius:50%;filter:blur(80px)}
+  .hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);color:var(--amber-400);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:32px}
+  .hero h1{font-size:3.5rem;color:#fff;line-height:1.15;font-weight:700}
+  .hero h1 .accent{color:var(--amber-400)}
+  .hero p.lead{color:var(--slate-300);font-size:1.15rem;margin-top:24px;max-width:500px}
+  .hero-cta{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap}
+  .hero-stats{display:flex;gap:40px;margin-top:48px;flex-wrap:wrap}
+  .hero-stat .v{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--amber-400)}
+  .hero-stat .l{font-size:.85rem;color:var(--slate-400)}
+  .hero-image{position:relative}
+  .hero-image .main{border-radius:24px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+  .hero-image .main img{width:100%;height:480px;object-fit:cover}
+  .hero-image .float-card{position:absolute;bottom:-24px;right:-24px;background:var(--amber-500);color:#fff;border-radius:16px;padding:20px;box-shadow:0 12px 32px rgba(0,0,0,.3)}
+  .hero-image .float-card .n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700}
+  .hero-image .float-card .l{font-size:.85rem;color:var(--amber-100);margin-top:2px}
+  .hero-badges{display:flex;gap:16px;margin-top:32px}
+  .hero-badge-sm{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--slate-300)}
+  .hero-badge-sm .dot{width:8px;height:8px;border-radius:50%;background:var(--amber-500)}
+
+  /* Section */
+  section{padding:96px 0}
+  .section-head{text-align:center;max-width:700px;margin:0 auto 64px}
+  .section-head .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--amber-50);color:var(--amber-700);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:8px 16px;border-radius:999px;border:1px solid var(--amber-200);margin-bottom:24px}
+  .section-head h2{font-size:2.5rem;color:var(--slate-900)}
+  .section-head p{color:var(--slate-500);font-size:1.1rem;margin-top:16px}
+
+  /* About */
+  .about{background:var(--slate-50)}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .about-images{position:relative}
+  .about-images .main{border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.1)}
+  .about-images .main img{width:100%;height:420px;object-fit:cover}
+  .about-images .accent-img{position:absolute;bottom:-32px;right:-32px;width:180px;height:180px;border-radius:16px;overflow:hidden;border:6px solid #fff;box-shadow:0 12px 32px rgba(0,0,0,.15)}
+  .about-images .accent-img img{width:100%;height:100%;object-fit:cover}
+  .about-content .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--amber-50);color:var(--amber-700);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:8px 16px;border-radius:999px;border:1px solid var(--amber-200);margin-bottom:24px}
+  .about-content h2{font-size:2.2rem;margin-bottom:20px}
+  .about-content p{color:var(--slate-600);margin-bottom:16px}
+  .about-content .link{display:inline-flex;align-items:center;gap:8px;font-size:.875rem;font-weight:600;color:var(--amber-700);border-bottom:2px solid var(--amber-400);padding-bottom:2px;margin-top:12px}
+
+  /* How It Works */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+  .step{position:relative}
+  .step .num{width:80px;height:80px;border-radius:20px;background:var(--slate-900);color:var(--amber-400);display:grid;place-items:center;font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;margin-bottom:24px;transition:all .3s}
+  .step:hover .num{background:var(--amber-500);color:#fff}
+  .step h3{font-size:1.3rem;margin-bottom:10px}
+  .step .desc{color:var(--slate-500);font-size:.95rem;margin-bottom:12px}
+  .step .detail{color:var(--slate-400);font-size:.85rem;padding-top:12px;border-top:1px solid var(--slate-200)}
+
+  /* Children */
+  .children{background:var(--slate-50)}
+  .children-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .child-card{background:#fff;border:2px solid var(--slate-200);border-radius:16px;overflow:hidden;transition:all .3s;cursor:pointer}
+  .child-card:hover{border-color:var(--amber-400);transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+  .child-card.featured{border-color:var(--amber-400)}
+  .child-card .img{position:relative;aspect-ratio:4/3;overflow:hidden}
+  .child-card .img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .child-card:hover .img img{transform:scale(1.05)}
+  .child-card .badge{position:absolute;top:12px;left:12px;background:var(--amber-500);color:#fff;font-size:.7rem;font-weight:600;padding:4px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+  .child-card .body{padding:20px}
+  .child-card .name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600}
+  .child-card .meta{font-size:.85rem;color:var(--slate-500);margin-top:4px}
+  .child-card .need{display:inline-block;font-size:.78rem;color:var(--amber-700);background:var(--amber-50);padding:4px 10px;border-radius:6px;margin-top:10px;border:1px solid var(--amber-200)}
+  .child-card .dream{font-size:.85rem;color:var(--slate-600);margin-top:10px;font-style:italic}
+  .child-card .btn-sponsor{width:100%;margin-top:14px;padding:10px;font-size:.85rem;background:var(--slate-900);color:#fff;border-radius:10px;font-weight:600;cursor:pointer;border:none;transition:all .2s}
+  .child-card .btn-sponsor:hover{background:var(--amber-500)}
+
+  /* Featured child carousel */
+  .featured-carousel{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;background:var(--slate-900);border-radius:32px;padding:64px;color:#fff;position:relative;overflow:hidden}
+  .featured-carousel::before{content:"";position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:rgba(245,158,11,.08);border-radius:50%;filter:blur(60px)}
+  .featured-carousel .img-wrap{position:relative;z-index:1;border-radius:20px;overflow:hidden}
+  .featured-carousel .img-wrap img{width:100%;height:400px;object-fit:cover}
+  .featured-carousel .info{position:relative;z-index:1}
+  .featured-carousel .tag{display:inline-block;background:var(--amber-500);color:#fff;font-size:.7rem;font-weight:600;padding:4px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px}
+  .featured-carousel h3{color:#fff;font-size:2rem;margin-bottom:8px}
+  .featured-carousel .meta{color:var(--slate-400);font-size:.95rem;margin-bottom:20px}
+  .featured-carousel .info-row{display:flex;gap:24px;margin-bottom:24px}
+  .featured-carousel .info-row .item .l{font-size:.78rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:.05em}
+  .featured-carousel .info-row .item .v{font-size:1rem;font-weight:600;color:#fff;margin-top:2px}
+  .featured-carousel .dream{color:var(--amber-300);font-style:italic;margin-bottom:24px}
+  .carousel-nav{display:flex;gap:12px;margin-top:20px}
+  .carousel-nav button{padding:10px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;cursor:pointer;font-size:.85rem;font-weight:500;transition:all .2s}
+  .carousel-nav button:hover{background:var(--amber-500);border-color:var(--amber-500)}
+
+  /* Impact */
+  .impact{background:var(--slate-900);color:#fff;position:relative;overflow:hidden}
+  .impact::before{content:"";position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;background:rgba(245,158,11,.06);border-radius:50%;filter:blur(60px)}
+  .impact .container{position:relative;z-index:1}
+  .impact .section-head h2{color:#fff}
+  .impact .section-head p{color:var(--slate-400)}
+  .impact .section-head .eyebrow{background:rgba(245,158,11,.15);color:var(--amber-400);border-color:rgba(245,158,11,.3)}
+  .impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+  .impact-card{text-align:center;padding:32px 24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;transition:all .3s}
+  .impact-card:hover{background:rgba(255,255,255,.07);transform:translateY(-4px)}
+  .impact-card .ic{width:48px;height:48px;background:rgba(245,158,11,.15);border-radius:12px;display:grid;place-items:center;font-size:1.4rem;margin:0 auto 16px}
+  .impact-card .stat{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:var(--amber-400)}
+  .impact-card .stat-label{font-size:.8rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+  .impact-card h3{color:#fff;font-size:1.1rem;margin:16px 0 8px}
+  .impact-card p{color:var(--slate-400);font-size:.88rem}
+
+  /* Testimonials */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .testi-card{background:#fff;border:1px solid var(--slate-200);border-radius:20px;padding:32px;transition:all .3s;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .testi-card:hover{box-shadow:0 12px 32px rgba(0,0,0,.08);transform:translateY(-4px)}
+  .testi-card .quote{font-size:1rem;color:var(--slate-700);line-height:1.7;margin-bottom:24px}
+  .testi-card .who{display:flex;align-items:center;gap:14px}
+  .testi-card .avatar{width:48px;height:48px;border-radius:50%;background:var(--amber-500);color:#fff;display:grid;place-items:center;font-weight:600;font-size:.9rem}
+  .testi-card .name{font-weight:600;color:var(--slate-900);font-size:.95rem}
+  .testi-card .role{font-size:.82rem;color:var(--slate-500)}
+
+  /* CTA band */
+  .cta-band{background:var(--amber-500);padding:64px 0;text-align:center;position:relative;overflow:hidden}
+  .cta-band::before{content:"";position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:rgba(255,255,255,.1);border-radius:50%}
+  .cta-band .container{position:relative;z-index:1}
+  .cta-band h2{color:#fff;font-size:2.5rem}
+  .cta-band p{color:var(--amber-100);font-size:1.1rem;margin:16px auto 32px;max-width:500px}
+  .cta-band .btn-white{background:#fff;color:var(--amber-600);padding:16px 36px;font-weight:700}
+  .cta-band .btn-white:hover{box-shadow:0 8px 24px rgba(0,0,0,.15)}
+
+  /* FAQ */
+  .faq{background:var(--slate-50)}
+  .faq-list{max-width:800px;margin:0 auto}
+  .faq-item{background:#fff;border:1px solid var(--slate-200);border-radius:16px;margin-bottom:16px;overflow:hidden;transition:all .2s}
+  .faq-item:hover{border-color:var(--amber-300)}
+  .faq-item summary{padding:24px 28px;font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--slate-900)}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary .icon{width:32px;height:32px;border-radius:8px;background:var(--amber-50);color:var(--amber-600);display:grid;place-items:center;transition:transform .2s;flex:none}
+  .faq-item[open] summary .icon{transform:rotate(180deg)}
+  .faq-item .ans{padding:0 28px 24px;color:var(--slate-600);font-size:.95rem}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .contact-info .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--amber-50);color:var(--amber-700);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:8px 16px;border-radius:999px;border:1px solid var(--amber-200);margin-bottom:24px}
+  .contact-info h2{font-size:2.2rem;margin-bottom:16px}
+  .contact-info p{color:var(--slate-500);margin-bottom:32px}
+  .contact-items{display:flex;flex-direction:column;gap:20px}
+  .contact-item{display:flex;align-items:center;gap:16px}
+  .contact-item .ic{width:48px;height:48px;background:var(--amber-100);border-radius:12px;display:grid;place-items:center;color:var(--amber-600);font-size:1.2rem;flex:none}
+  .contact-item .l{font-size:.78rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:.05em}
+  .contact-item .v{font-size:1rem;font-weight:600;color:var(--slate-900)}
+  .contact-form{background:#fff;border:1px solid var(--slate-200);border-radius:20px;padding:32px;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+  .contact-form h3{font-size:1.4rem;margin-bottom:24px}
+  .contact-form .field{margin-bottom:16px}
+  .contact-form label{display:block;font-size:.82rem;font-weight:600;color:var(--slate-700);margin-bottom:6px}
+  .contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:12px 16px;border:1px solid var(--slate-200);border-radius:10px;font-family:'Inter',sans-serif;font-size:.95rem;color:var(--slate-800);background:var(--slate-50);transition:all .2s}
+  .contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{outline:none;border-color:var(--amber-400);background:#fff;box-shadow:0 0 0 3px rgba(245,158,11,.1)}
+  .contact-form textarea{resize:none}
+
+  /* Footer */
+  footer.site{background:var(--slate-900);color:var(--slate-400);padding:64px 0 32px}
+  footer .grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+  footer .brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+  footer .brand .logo{width:36px;height:36px;background:var(--amber-500);border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:700}
+  footer .brand .n{font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.05rem}
+  footer .brand .n span{display:block;font-size:.7rem;color:var(--slate-500);font-family:'Inter',sans-serif;font-weight:400}
+  footer .desc{font-size:.9rem;line-height:1.7;margin-bottom:20px;max-width:360px}
+  footer .social{display:flex;gap:12px}
+  footer .social a{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.06);display:grid;place-items:center;color:var(--slate-400);transition:all .2s;cursor:pointer}
+  footer .social a:hover{background:var(--amber-500);color:#fff}
+  footer h4{color:#fff;font-family:'Inter',sans-serif;font-size:.85rem;font-weight:600;margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em}
+  footer .links a{display:block;padding:6px 0;font-size:.88rem;cursor:pointer;transition:color .2s}
+  footer .links a:hover{color:var(--amber-400)}
+  footer .bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;flex-wrap:wrap;gap:12px}
+
+  /* Page view */
+  .page-view{display:none}
+  .page-view.active{display:block}
+  .page-hero{background:linear-gradient(135deg,#0f172a,#1e293b 40%,#0c4a6e);color:#fff;padding:140px 0 64px;position:relative;overflow:hidden}
+  .page-hero::before{content:"";position:absolute;top:20%;right:20%;width:384px;height:384px;background:rgba(245,158,11,.1);border-radius:50%;filter:blur(80px)}
+  .page-hero .container{position:relative;z-index:1}
+  .page-hero .crumb{font-size:.82rem;color:var(--slate-400);margin-bottom:12px}
+  .page-hero h1{color:#fff;font-size:2.8rem}
+  .page-hero p{color:var(--slate-300);max-width:600px;margin-top:16px;font-size:1.1rem}
+  .page-body{padding:80px 0}
+  .page-layout{display:grid;grid-template-columns:240px 1fr;gap:48px;align-items:start}
+  .side-nav{position:sticky;top:96px}
+  .side-nav h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--slate-500);margin-bottom:12px;font-family:'Inter',sans-serif}
+  .side-nav a{display:block;padding:10px 14px;border-radius:10px;font-size:.92rem;color:var(--slate-700);cursor:pointer;transition:all .15s;margin-bottom:4px}
+  .side-nav a:hover{background:var(--amber-50);color:var(--amber-700)}
+  .side-nav a.active{background:var(--amber-500);color:#fff;font-weight:600}
+  .prose h2{font-size:1.8rem;margin:32px 0 16px}
+  .prose h3{font-size:1.3rem;margin:24px 0 12px}
+  .prose p{color:var(--slate-600);margin-bottom:16px}
+  .prose ul{margin:0 0 16px 20px;color:var(--slate-600)}
+  .prose li{margin-bottom:8px}
+  .prose strong{color:var(--slate-900)}
+  .prose .lead{font-size:1.15rem;color:var(--slate-700)}
+
+  /* Timeline */
+  .timeline{position:relative;padding-left:32px;margin:32px 0}
+  .timeline::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--amber-200)}
+  .timeline .t-item{position:relative;padding-bottom:28px}
+  .timeline .t-item::before{content:"";position:absolute;left:-27px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--amber-500);border:3px solid #fff;box-shadow:0 0 0 2px var(--amber-200)}
+  .timeline .t-item .yr{font-family:'Playfair Display',serif;font-weight:700;color:var(--amber-600);font-size:.9rem}
+  .timeline .t-item h3{font-size:1.1rem;margin:4px 0 6px}
+  .timeline .t-item p{font-size:.92rem;margin:0}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+  .reveal.in{opacity:1;transform:none}
+
+  /* Responsive */
+  @media(max-width:1024px){
+    .nav-links{display:none}
+    .burger{display:block}
+    .mobile-nav{display:block}
+    .hero .container{grid-template-columns:1fr;gap:40px}
+    .hero h1{font-size:2.5rem}
+    .hero-image{max-width:500px}
+    .about-grid,.featured-carousel,.contact-grid{grid-template-columns:1fr;gap:40px}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .children-grid{grid-template-columns:repeat(2,1fr)}
+    .impact-grid{grid-template-columns:repeat(2,1fr)}
+    .testi-grid{grid-template-columns:1fr}
+    footer .grid{grid-template-columns:1fr 1fr}
+    .page-layout{grid-template-columns:1fr}
+    .side-nav{position:static}
+  }
+  @media(max-width:640px){
+    .hero h1{font-size:2rem}
+    .section-head h2,.cta-band h2{font-size:1.8rem}
+    .steps{grid-template-columns:1fr}
+    .children-grid{grid-template-columns:1fr}
+    .impact-grid{grid-template-columns:1fr 1fr}
+    .hero-stats{gap:24px}
+    footer .grid{grid-template-columns:1fr}
+    .featured-carousel{padding:32px}
+    .featured-carousel h3{font-size:1.5rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <div class="container">
+    <div class="nav-brand" onclick="go('home')">
+      <div class="logo">S</div>
+      <div class="name">Sewa USA<span>Sponsor A Child</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a class="nav-link" onclick="go('home')">Home</a></li>
+      <li><a class="nav-link" onclick="go('about')">About</a></li>
+      <li><a class="nav-link" onclick="go('sponsor')">Sponsor a Child</a></li>
+      <li><a class="nav-link" onclick="go('how')">How It Works</a></li>
+      <li><a class="nav-link" onclick="go('impact')">Impact</a></li>
+      <li><a class="nav-link" onclick="go('faqs')">FAQs</a></li>
+      <li><a class="nav-link" onclick="go('contact')">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-amber-sm" onclick="go('sponsor')">Sponsor Now</a>
+      <button class="burger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" style="display:none">
+  <a onclick="go('home')">Home</a>
+  <a onclick="go('about')">About</a>
+  <a onclick="go('sponsor')">Sponsor a Child</a>
+  <a onclick="go('how')">How It Works</a>
+  <a onclick="go('impact')">Impact</a>
+  <a onclick="go('faqs')">FAQs</a>
+  <a onclick="go('contact')">Contact</a>
+</div>
+
+<!-- ============ HOME ============ -->
+<div class="page-view active" id="view-home">
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="glow"></div>
+  <div class="container">
+    <div>
+      <div class="hero-badge">★ Sewa International · 501(c)(3)</div>
+      <h1>Transforming Lives, <span class="accent">One Child</span> at a Time</h1>
+      <p class="lead">Empowering children across India through education — one sponsorship at a time. Every contribution goes directly to a child's educational expenses.</p>
+      <div class="hero-cta">
+        <a class="btn btn-amber" onclick="go('sponsor')">Sponsor a Child →</a>
+        <a class="btn btn-outline" style="color:var(--slate-300);border-color:rgba(255,255,255,.2)" onclick="go('about')">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="v">25,000+</div><div class="l">Children Impacted</div></div>
+        <div class="hero-stat"><div class="v">18+</div><div class="l">Years of Service</div></div>
+        <div class="hero-stat"><div class="v">12</div><div class="l">Indian States</div></div>
+        <div class="hero-stat"><div class="v">98%</div><div class="l">Retention Rate</div></div>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge-sm"><span class="dot"></span> 100% Transparent</div>
+        <div class="hero-badge-sm"><span class="dot"></span> Award Winning</div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="main"><img src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Children studying"></div>
+      <div class="float-card">
+        <div class="n">25,000+</div>
+        <div class="l">Children supported since 2006</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images reveal">
+        <div class="main"><img src="https://images.pexels.com/photos/8613312/pexels-photo-8613312.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Children studying"></div>
+        <div class="accent-img"><img src="https://images.pexels.com/photos/8613078/pexels-photo-8613078.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Education impact"></div>
+      </div>
+      <div class="about-content reveal">
+        <div class="eyebrow">About the Program</div>
+        <h2>Every child deserves a chance to learn</h2>
+        <p>Education is a fundamental right, yet millions of children in India face barriers that force them to drop out. Sudden family tragedies, loss of income, or a simple lack of resources can end a child's education overnight.</p>
+        <p>The <strong>Sponsor a Child (SAC)</strong> program, initiated by Sewa International, bridges this gap by providing direct financial support to students from grades 1 to 12. Since inception, we have positively impacted over <strong>25,000 children</strong> across 12 Indian states.</p>
+        <a class="link" onclick="go('about')">Full Program Details →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Simple Process</div>
+      <h2>Four steps to transform a life</h2>
+      <p>From choosing a child to watching their dreams unfold — every step of your sponsorship journey is clear, direct, and deeply meaningful.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">01</div>
+        <h3>Choose a Child</h3>
+        <p class="desc">Browse profiles of children from grades 1–12 who need support to continue their education.</p>
+        <p class="detail">Each profile includes the child's age, grade, state, specific need, and their dream for the future.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">02</div>
+        <h3>Make a Donation</h3>
+        <p class="desc">Sponsor a child with a one-time or recurring contribution. Every rupee goes directly to education.</p>
+        <p class="detail">Sponsorships typically range from $25–$75/month. 100% of your contribution reaches the child.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">03</div>
+        <h3>Track Progress</h3>
+        <p class="desc">Receive updates on your sponsored child's academic achievements and milestones throughout the year.</p>
+        <p class="detail">You'll get periodic reports, photos, and personal messages from the child and their family.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">04</div>
+        <h3>Transform a Life</h3>
+        <p class="desc">Watch your investment grow into a brighter future — for the child, their family, and their community.</p>
+        <p class="detail">Alumni of the program go on to higher education and careers that change the trajectory of entire families.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHILDREN -->
+<section class="children" id="children">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Open Sponsorships</div>
+      <h2>Meet the Children</h2>
+      <p>Browse profiles of children from grades 1–12 who need support to continue their education.</p>
+    </div>
+    <div class="children-grid" id="childrenGrid"></div>
+    <div style="text-align:center;margin-top:40px">
+      <a class="btn btn-outline" onclick="go('sponsor')">View all children →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED CHILD -->
+<section style="padding:96px 0;background:var(--slate-50)">
+  <div class="container">
+    <div class="featured-carousel reveal">
+      <div class="img-wrap"><img id="featuredImg" src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Featured child"></div>
+      <div class="info">
+        <div class="tag">Featured Child</div>
+        <h3 id="featuredName">Gundla Sahasra</h3>
+        <div class="meta" id="featuredMeta">15 yrs · Gr. 10th · Telangana</div>
+        <div class="info-row">
+          <div class="item"><div class="l">Needs Support For</div><div class="v" id="featuredNeed">School fees & books</div></div>
+          <div class="item"><div class="l">Dream</div><div class="v" id="featuredDream">Wants to become a doctor</div></div>
+        </div>
+        <p class="dream" id="featuredDreamText">"Wants to become a doctor"</p>
+        <a class="btn btn-amber" onclick="go('sponsor')">Sponsor Now</a>
+        <div class="carousel-nav">
+          <button onclick="prevChild()">← Previous</button>
+          <button onclick="nextChild()">Next Child →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="impact" id="impact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Measurable Outcomes</div>
+      <h2>The difference your support makes</h2>
+      <p>Every dollar invested in a child's education yields a lifetime of returns — for the child, their family, and society at large.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card reveal">
+        <div class="ic">🎓</div>
+        <div class="stat">92%</div><div class="stat-label">Pass Rate</div>
+        <h3>Academic Excellence</h3>
+        <p>Sponsored children consistently outperform national averages in board exams and grade-level assessments.</p>
+      </div>
+      <div class="impact-card reveal">
+        <div class="ic">♀</div>
+        <div class="stat">48%</div><div class="stat-label">Girls Sponsored</div>
+        <h3>Gender Equity</h3>
+        <p>Nearly half of all sponsorships go to girls, directly combating gender-based dropout trends.</p>
+      </div>
+      <div class="impact-card reveal">
+        <div class="ic">🌐</div>
+        <div class="stat">12</div><div class="stat-label">States Reached</div>
+        <h3>Community Growth</h3>
+        <p>Educated children become role models, lifting entire families and neighborhoods across India.</p>
+      </div>
+      <div class="impact-card reveal">
+        <div class="ic">📈</div>
+        <div class="stat">3×</div><div class="stat-label">Income Growth</div>
+        <h3>Long-term Impact</h3>
+        <p>Alumni report significantly higher household income within five years of completing their education.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Voices of Impact</div>
+      <h2>Stories from sponsors and students</h2>
+      <p>Join thousands of sponsors making education possible across India.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <p class="quote">"Thanks to my sponsor, I was able to complete my 12th board exams with distinction. I am now pursuing a B.Tech degree — something my family never imagined possible."</p>
+        <div class="who"><div class="avatar">DS</div><div><div class="name">Divya Sharma</div><div class="role">Former Sponsored Child, Hyderabad</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="quote">"Sponsoring a child through Sewa is one of the most meaningful things I've ever done. The updates I receive remind me that a small contribution can truly change a life forever."</p>
+        <div class="who"><div class="avatar">AP</div><div><div class="name">Anita Patel</div><div class="role">Sponsor, New Jersey</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="quote">"Sewa International's transparency and on-ground execution gave us the confidence to partner with the SAC program. We've seen real, measurable results in communities across India."</p>
+        <div class="who"><div class="avatar">RI</div><div><div class="name">Dr. Rajesh Iyer</div><div class="role">Corporate Partner, Chicago</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to change a life?</h2>
+    <p>Thousands of children in India face educational barriers every year. Your sponsorship keeps them in school — and keeps their dreams alive.</p>
+    <a class="btn btn-white" onclick="go('sponsor')">Give a Child a Future →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faqs">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Everything you need to know</div>
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know before you sponsor.</p>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--slate-50)">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>We'd love to hear from you</h2>
+        <p>Have questions about sponsoring a child, corporate partnerships, or volunteering? Our team is here to help.</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="ic">✉</div><div><div class="l">Email</div><div class="v">sac@sewausa.org</div></div></div>
+          <div class="contact-item"><div class="ic">☎</div><div><div class="l">Phone</div><div class="v">+1 (888) SEWA-USA</div></div></div>
+          <div class="contact-item"><div class="ic">📍</div><div><div class="l">Address</div><div class="v">Sewa International USA, Irving, TX</div></div></div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3>Send us a message</h3>
+        <form onsubmit="event.preventDefault();alert('Thank you! Our team will get back to you soon.');">
+          <div class="field"><label>First Name</label><input required placeholder="Your name" /></div>
+          <div class="field"><label>Email</label><input required type="email" placeholder="you@example.com" /></div>
+          <div class="field"><label>Organization</label><input placeholder="Organization (optional)" /></div>
+          <div class="field"><label>Subject</label>
+            <select><option>General Inquiry</option><option>Sponsoring a Child</option><option>Corporate Partnership</option><option>Volunteering</option><option>Media Inquiry</option></select>
+          </div>
+          <div class="field"><label>Message</label><textarea required rows="5" placeholder="How can we help you?"></textarea></div>
+          <button class="btn btn-amber" type="submit" style="width:100%">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /view-home -->
+
+<!-- ============ SUB-PAGE CONTAINER ============ -->
+<div id="subpage"></div>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <div class="brand">
+          <div class="logo">S</div>
+          <div class="n">Sewa USA<span>Sponsor A Child</span></div>
+        </div>
+        <p class="desc">Empowering children across India through education — one sponsorship at a time. A program by Sewa International, 501(c)(3) registered.</p>
+        <div class="social">
+          <a title="Facebook">f</a><a title="Twitter">X</a><a title="Instagram">◎</a><a title="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <h4>Program</h4>
+        <div class="links">
+          <a onclick="go('about')">About the Program</a>
+          <a onclick="go('sponsor')">Sponsor a Child</a>
+          <a onclick="go('how')">How It Works</a>
+          <a onclick="go('impact')">Impact</a>
+        </div>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <div class="links">
+          <a onclick="go('sponsor')">Sponsor a Child</a>
+          <a onclick="go('contact')">Donate</a>
+          <a onclick="go('contact')">Volunteer</a>
+          <a onclick="go('contact')">Corporate Partnership</a>
+        </div>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <div class="links">
+          <a onclick="go('faqs')">FAQs</a>
+          <a onclick="go('contact')">Contact Us</a>
+          <a onclick="go('about')">Annual Reports</a>
+          <a onclick="go('about')">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© 2025 Sewa USA — Sponsor A Child Program. All rights reserved.</div>
+      <div>Made with ♥ by Sewa International</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Data */
+const CHILDREN = [
+  {id:1,name:"Gundla Sahasra",age:15,grade:"10th",state:"Telangana",need:"School fees & books",image:"https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600",dream:"Wants to become a doctor",featured:true},
+  {id:2,name:"Arjun Meena",age:12,grade:"7th",state:"Rajasthan",need:"Uniform & stationery",image:"https://images.pexels.com/photos/8613312/pexels-photo-8613312.jpeg?auto=compress&cs=tinysrgb&w=400",dream:"Aspires to be an engineer",featured:false},
+  {id:3,name:"Kavya Reddy",age:9,grade:"4th",state:"Andhra Pradesh",need:"Tuition & school fees",image:"https://images.pexels.com/photos/8613078/pexels-photo-8613078.jpeg?auto=compress&cs=tinysrgb&w=400",dream:"Dreams of becoming a teacher",featured:false},
+  {id:4,name:"Rahul Kumar",age:17,grade:"12th",state:"Uttar Pradesh",need:"Exam fees & books",image:"https://images.pexels.com/photos/8613092/pexels-photo-8613092.jpeg?auto=compress&cs=tinysrgb&w=400",dream:"Wants to pursue law",featured:false},
+  {id:5,name:"Priya Devi",age:11,grade:"6th",state:"Bihar",need:"School fees & meals",image:"https://images.pexels.com/photos/8613096/pexels-photo-8613096.jpeg?auto=compress&cs=tinysrgb&w=400",dream:"Wants to be a scientist",featured:false},
+  {id:6,name:"Sanjay Yadav",age:14,grade:"9th",state:"Madhya Pradesh",need:"Tuition & transport",image:"https://images.pexels.com/photos/8613319/pexels-photo-8613319.jpeg?auto=compress&cs=tinysrgb&w=400",dream:"Aspires to join the army",featured:false}
+];
+
+const FAQS = [
+  {q:"How much does it cost to sponsor a child?",a:"Sponsorships vary by grade and need, typically ranging from $25–$75 per month. 100% of your contribution goes directly to the child's educational expenses."},
+  {q:"How is my donation used?",a:"Funds cover school fees, uniforms, textbooks, stationery, and in some cases, mid-day meals and transport — everything needed to keep a child in school."},
+  {q:"Will I receive updates about the child I sponsor?",a:"Yes! You'll receive periodic updates including the child's academic progress, photographs, and personal messages throughout the academic year."},
+  {q:"Is my donation tax-deductible?",a:"Yes. Sewa USA is a registered 501(c)(3) organization. All donations are tax-deductible to the extent permitted by law."},
+  {q:"Can I sponsor more than one child?",a:"Absolutely. Many of our donors sponsor multiple children. You can manage all your sponsorships through your Sewa USA donor account."}
+];
+
+/* Render children grid */
+function renderChildren(){
+  const grid = document.getElementById('childrenGrid');
+  if(!grid) return;
+  grid.innerHTML = CHILDREN.map(c => `
+    <div class="child-card ${c.featured?'featured':''} reveal" onclick="go('sponsor')">
+      <div class="img"><img src="${c.image}" alt="${c.name}">${c.featured?'<div class="badge">Featured</div>':''}</div>
+      <div class="body">
+        <div class="name">${c.name}</div>
+        <div class="meta">${c.age} yrs · Gr. ${c.grade} · ${c.state}</div>
+        <div class="need">${c.need}</div>
+        <div class="dream">"${c.dream}"</div>
+        <button class="btn-sponsor">Sponsor Now</button>
+      </div>
+    </div>`).join('');
+  setTimeout(reveal,50);
+}
+
+/* Render FAQs */
+function renderFAQs(){
+  const list = document.getElementById('faqList');
+  if(!list) return;
+  list.innerHTML = FAQS.map((f,i) => `
+    <details class="faq-item reveal" ${i===0?'open':''}>
+      <summary>${f.q}<span class="icon">▾</span></summary>
+      <div class="ans"><p>${f.a}</p></div>
+    </details>`).join('');
+  setTimeout(reveal,50);
+}
+
+/* Featured carousel */
+let featuredIdx = 0;
+function updateFeatured(){
+  const c = CHILDREN[featuredIdx];
+  document.getElementById('featuredImg').src = c.image;
+  document.getElementById('featuredName').textContent = c.name;
+  document.getElementById('featuredMeta').textContent = `${c.age} yrs · Gr. ${c.grade} · ${c.state}`;
+  document.getElementById('featuredNeed').textContent = c.need;
+  document.getElementById('featuredDream').textContent = c.dream;
+  document.getElementById('featuredDreamText').textContent = `"${c.dream}"`;
+}
+function nextChild(){featuredIdx=(featuredIdx+1)%CHILDREN.length;updateFeatured()}
+function prevChild(){featuredIdx=(featuredIdx-1+CHILDREN.length)%CHILDREN.length;updateFeatured()}
+
+/* Pages */
+const PAGES = {
+  about:{title:"About the Program",crumb:"About",img:"https://images.pexels.com/photos/8613312/pexels-photo-8613312.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"Sponsor a Child (SAC) is a project of Sewa International for the holistic development of underprivileged children from low-income families in India.",
+    side:[{label:"About the Program",active:true,page:"about"},{label:"Vision & Mission",active:false,page:"vision"},{label:"History",active:false,page:"history"}],
+    body:`
+    <p class="lead">Every child deserves a chance to learn.</p>
+    <p>Education is a fundamental right, yet millions of children in India face barriers that force them to drop out. Sudden family tragedies, loss of income, or a simple lack of resources can end a child's education overnight.</p>
+    <p>The <strong>Sponsor a Child (SAC)</strong> program, initiated by Sewa International, bridges this gap by providing direct financial support to students from grades 1 to 12. Since inception, we have positively impacted over <strong>25,000 children</strong> across 12 Indian states.</p>
+    <h2>Our Mission</h2>
+    <p>Mission of Sewa International is three fold: <strong>serve humanity in distress, aid local communities, and promote volunteerism.</strong></p>
+    <h2>About Sewa International</h2>
+    <p>Sewa International is a Hindu faith-based, humanitarian, nonprofit service organization registered under Internal Revenue Code 501(c)(3). Founded in 2003, Sewa International is part of a larger movement that started in India in 1989 and is active in twenty countries. Sewa serves humanity irrespective of race, color, religion, gender or nationality.</p>
+    <p>We specialize in disaster relief and rehabilitation. Our development programs focus on family services; child, tribal and refugee welfare; women empowerment; health; and education.</p>
+    <a class="btn btn-amber" onclick="go('sponsor')" style="margin-top:20px">Sponsor a Child →</a>`},
+
+  vision:{title:"Vision & Mission",crumb:"About / Vision",img:"https://images.pexels.com/photos/8613078/pexels-photo-8613078.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"Educating the underserved to build a better world.",
+    side:[{label:"About the Program",active:false,page:"about"},{label:"Vision & Mission",active:true,page:"vision"},{label:"History",active:false,page:"history"}],
+    body:`
+    <p class="lead">Educating the underserved to build a better world.</p>
+    <p>Sponsor A Child, a project of Sewa International, aims to empower the children of the invisible poor through education. We provide educational access and opportunities to excel far beyond academics to develop them into well-rounded future global citizens.</p>
+    <h2>Vision</h2>
+    <p style="font-size:1.2rem;font-weight:600;color:var(--amber-600)">Educating the underserved to build a better world</p>
+    <h2>Mission</h2>
+    <ul>
+      <li>Partner with like-minded individuals and organizations</li>
+      <li>Establish programs, resources, and instructional facilities that strengthen education</li>
+      <li>Focus on the holistic development of children</li>
+    </ul>`},
+
+  history:{title:"History",crumb:"About / History",img:"https://images.pexels.com/photos/8613092/pexels-photo-8613092.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"From a humble beginning in 2009 to a nationwide movement impacting over 25,000 students across 28 states in India.",
+    side:[{label:"About the Program",active:false,page:"about"},{label:"Vision & Mission",active:false,page:"vision"},{label:"History",active:true,page:"history"}],
+    body:`
+    <p class="lead">A transformative journey of compassion and collective action.</p>
+    <p>Embark on a transformative journey with the Sponsor A Child program by Sewa International. Starting humbly in 2009, this noble initiative has grown exponentially, impacting the lives of over 25,000 students across 28 states in India.</p>
+    <div class="timeline">
+      <div class="t-item"><div class="yr">2009</div><h3>A Humble Beginning</h3><p>A group of passionate volunteers from Sewa International embarked on a noble mission — to support the education of underprivileged students in India.</p></div>
+      <div class="t-item"><div class="yr">2011</div><h3>Expanding Horizons</h3><p>Encouraged by early successes, the program expanded to more districts in Karnataka and Andhra Pradesh.</p></div>
+      <div class="t-item"><div class="yr">2015</div><h3>Embracing Technology</h3><p>The program launched a dedicated website, providing donors the opportunity to monitor academic progress. This facilitated swift expansion, impacting over 1,000 children.</p></div>
+      <div class="t-item"><div class="yr">2016</div><h3>Investing in Impact</h3><p>Sponsor A Child hired three full-time personnel, ensuring dedicated focus on donor relations and remote operations.</p></div>
+      <div class="t-item"><div class="yr">2018</div><h3>Reaching Across States</h3><p>The program extended support to 1,300 children across five different states.</p></div>
+      <div class="t-item"><div class="yr">2020</div><h3>Amidst Challenges</h3><p>In the face of the COVID-19 pandemic, SAC extended support to children from COVID-affected families.</p></div>
+      <div class="t-item"><div class="yr">2022</div><h3>National Reach</h3><p>The program impacted over 9,620 students from 40% districts across 28 states and 4 union territories.</p></div>
+      <div class="t-item"><div class="yr">2023+</div><h3>Continued Growth</h3><p>In 2023, we sponsored more than 3,600 children. From a modest initiative to a nationwide movement, SAC continues to sow seeds of hope.</p></div>
+    </div>`},
+
+  sponsor:{title:"Sponsor a Child",crumb:"Sponsor a Child",img:"https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"Choose a child to sponsor and support their education journey. Every contribution goes directly to a child's educational expenses.",
+    side:[{label:"Sponsor a Child",active:true,page:"sponsor"},{label:"How It Works",active:false,page:"how"}],
+    body:`
+    <p class="lead">Every child deserves a chance. Your help makes it possible.</p>
+    <p>When you sponsor a child, you don't just give money — you give them a future. Browse profiles of children from grades 1–12 who need support to continue their education.</p>
+    <div class="children-grid" style="margin-top:32px">${CHILDREN.map(c=>`
+      <div class="child-card ${c.featured?'featured':''}" onclick="go('contact')">
+        <div class="img"><img src="${c.image}" alt="${c.name}">${c.featured?'<div class="badge">Featured</div>':''}</div>
+        <div class="body">
+          <div class="name">${c.name}</div>
+          <div class="meta">${c.age} yrs · Gr. ${c.grade} · ${c.state}</div>
+          <div class="need">${c.need}</div>
+          <div class="dream">"${c.dream}"</div>
+          <button class="btn-sponsor">Sponsor Now</button>
+        </div>
+      </div>`).join('')}
+    </div>
+    <h2>How Your Sponsorship Helps</h2>
+    <ul>
+      <li><strong>School fees (tuition):</strong> Donations are primarily used to pay school fees directly to the educational institution.</li>
+      <li><strong>Uniforms & textbooks:</strong> Essential supplies to keep a child in school.</li>
+      <li><strong>Stationery & mid-day meals:</strong> In some cases, meals and transport are also covered.</li>
+      <li><strong>100% of your contribution</strong> goes directly to the child's educational expenses.</li>
+    </ul>
+    <a class="btn btn-amber" onclick="go('contact')" style="margin-top:20px">Make a Donation →</a>`},
+
+  how:{title:"How It Works",crumb:"How It Works",img:"https://images.pexels.com/photos/8613096/pexels-photo-8613096.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"Four steps to transform a life — from choosing a child to watching their dreams unfold.",
+    side:[{label:"How It Works",active:true,page:"how"},{label:"Sponsor a Child",active:false,page:"sponsor"}],
+    body:`
+    <p class="lead">From choosing a child to watching their dreams unfold — every step of your sponsorship journey is clear, direct, and deeply meaningful.</p>
+    <div class="steps" style="display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:32px">
+      <div class="step"><div class="num">01</div><h3>Choose a Child</h3><p class="desc">Browse profiles of children from grades 1–12 who need support to continue their education.</p><p class="detail">Each profile includes the child's age, grade, state, specific need, and their dream for the future.</p></div>
+      <div class="step"><div class="num">02</div><h3>Make a Donation</h3><p class="desc">Sponsor a child with a one-time or recurring contribution. Every rupee goes directly to education.</p><p class="detail">Sponsorships typically range from $25–$75/month. 100% of your contribution reaches the child.</p></div>
+      <div class="step"><div class="num">03</div><h3>Track Progress</h3><p class="desc">Receive updates on your sponsored child's academic achievements and milestones throughout the year.</p><p class="detail">You'll get periodic reports, photos, and personal messages from the child and their family.</p></div>
+      <div class="step"><div class="num">04</div><h3>Transform a Life</h3><p class="desc">Watch your investment grow into a brighter future — for the child, their family, and their community.</p><p class="detail">Alumni of the program go on to higher education and careers that change the trajectory of entire families.</p></div>
+    </div>
+    <a class="btn btn-amber" onclick="go('sponsor')" style="margin-top:32px">Sponsor a Child →</a>`},
+
+  impact:{title:"Our Impact",crumb:"Impact",img:"https://images.pexels.com/photos/8613078/pexels-photo-8613078.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"Every dollar invested in a child's education yields a lifetime of returns — for the child, their family, and society at large.",
+    side:[{label:"Our Impact",active:true,page:"impact"}],
+    body:`
+    <p class="lead">The difference your support makes.</p>
+    <p>Every dollar invested in a child's education yields a lifetime of returns — for the child, their family, and society at large.</p>
+    <div class="impact-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px">
+      <div class="impact-card" style="background:var(--slate-50)"><div class="ic" style="background:rgba(245,158,11,.15);color:var(--amber-600)">🎓</div><div class="stat" style="color:var(--amber-600)">92%</div><div class="stat-label" style="color:var(--slate-500)">Pass Rate</div><h3 style="color:var(--slate-900)">Academic Excellence</h3><p style="color:var(--slate-500)">Sponsored children consistently outperform national averages in board exams and grade-level assessments.</p></div>
+      <div class="impact-card" style="background:var(--slate-50)"><div class="ic" style="background:rgba(245,158,11,.15);color:var(--amber-600)">♀</div><div class="stat" style="color:var(--amber-600)">48%</div><div class="stat-label" style="color:var(--slate-500)">Girls Sponsored</div><h3 style="color:var(--slate-900)">Gender Equity</h3><p style="color:var(--slate-500)">Nearly half of all sponsorships go to girls, directly combating gender-based dropout trends.</p></div>
+      <div class="impact-card" style="background:var(--slate-50)"><div class="ic" style="background:rgba(245,158,11,.15);color:var(--amber-600)">🌐</div><div class="stat" style="color:var(--amber-600)">12</div><div class="stat-label" style="color:var(--slate-500)">States Reached</div><h3 style="color:var(--slate-900)">Community Growth</h3><p style="color:var(--slate-500)">Educated children become role models, lifting entire families and neighborhoods across India.</p></div>
+      <div class="impact-card" style="background:var(--slate-50)"><div class="ic" style="background:rgba(245,158,11,.15);color:var(--amber-600)">📈</div><div class="stat" style="color:var(--amber-600)">3×</div><div class="stat-label" style="color:var(--slate-500)">Income Growth</div><h3 style="color:var(--slate-900)">Long-term Impact</h3><p style="color:var(--slate-500)">Alumni report significantly higher household income within five years of completing their education.</p></div>
+    </div>`},
+
+  faqs:{title:"FAQs",crumb:"FAQs",img:"https://images.pexels.com/photos/8613092/pexels-photo-8613092.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"Everything you need to know before you sponsor.",
+    side:[{label:"FAQs",active:true,page:"faqs"},{label:"Contact Us",active:false,page:"contact"}],
+    body:`
+    <p class="lead">Everything you need to know before you sponsor.</p>
+    <div class="faq-list" style="margin-top:24px">${FAQS.map((f,i)=>`
+      <details class="faq-item" ${i===0?'open':''}>
+        <summary>${f.q}<span class="icon">▾</span></summary>
+        <div class="ans"><p>${f.a}</p></div>
+      </details>`).join('')}
+    </div>`},
+
+  contact:{title:"Contact Us",crumb:"Contact",img:"https://images.pexels.com/photos/8613319/pexels-photo-8613319.jpeg?auto=compress&cs=tinysrgb&w=600",
+    intro:"Have questions about sponsoring a child, corporate partnerships, or volunteering? Our team is here to help.",
+    side:[{label:"Contact Us",active:true,page:"contact"},{label:"FAQs",active:false,page:"faqs"}],
+    body:`
+    <p class="lead">We'd love to hear from you.</p>
+    <p>Have questions about sponsoring a child, corporate partnerships, or volunteering? Our team is here to help.</p>
+    <div class="contact-items" style="margin:32px 0">
+      <div class="contact-item"><div class="ic">✉</div><div><div class="l">Email</div><div class="v">sac@sewausa.org</div></div></div>
+      <div class="contact-item"><div class="ic">☎</div><div><div class="l">Phone</div><div class="v">+1 (888) SEWA-USA</div></div></div>
+      <div class="contact-item"><div class="ic">📍</div><div><div class="l">Address</div><div class="v">Sewa International USA, Irving, TX</div></div></div>
+    </div>
+    <div class="contact-form" style="max-width:560px">
+      <h3>Send us a message</h3>
+      <form onsubmit="event.preventDefault();alert('Thank you! Our team will get back to you soon.');">
+        <div class="field"><label>First Name</label><input required placeholder="Your name" /></div>
+        <div class="field"><label>Email</label><input required type="email" placeholder="you@example.com" /></div>
+        <div class="field"><label>Subject</label><select><option>General Inquiry</option><option>Sponsoring a Child</option><option>Corporate Partnership</option><option>Volunteering</option><option>Media Inquiry</option></select></div>
+        <div class="field"><label>Message</label><textarea required rows="5" placeholder="How can we help you?"></textarea></div>
+        <button class="btn btn-amber" type="submit" style="width:100%">Send Message</button>
+      </form>
+    </div>`}
+};
+
+/* Router */
+function go(page){
+  if(page==='home'){
+    document.getElementById('view-home').classList.add('active');
+    document.getElementById('subpage').innerHTML='';
+  } else {
+    document.getElementById('view-home').classList.remove('active');
+    const p = PAGES[page];
+    if(!p) return;
+    const side = p.side.map(s=>`<a class="${s.active?'active':''}" onclick="go('${s.page}')">${s.label}</a>`).join('');
+    document.getElementById('subpage').innerHTML = `
+      <section class="page-hero">
+        <div class="container">
+          <div class="crumb">${p.crumb}</div>
+          <h1>${p.title}</h1>
+          <p>${p.intro}</p>
+        </div>
+      </section>
+      <section class="page-body">
+        <div class="container">
+          <div class="page-layout">
+            <aside class="side-nav">
+              <h4>Explore</h4>
+              ${side}
+            </aside>
+            <div class="prose">
+              <img src="${p.img}" alt="${p.title}" style="border-radius:16px;margin-bottom:32px;width:100%;max-height:360px;object-fit:cover;box-shadow:0 12px 32px rgba(0,0,0,.1)">
+              ${p.body}
+            </div>
+          </div>
+        </div>
+      </section>`;
+  }
+  window.scrollTo(0,0);
+  closeMobile();
+  setTimeout(reveal,50);
+}
+
+/* Mobile nav */
+function toggleMobile(){const m=document.getElementById('mobileNav');m.style.display=m.style.display==='block'?'none':'block'}
+function closeMobile(){document.getElementById('mobileNav').style.display='none'}
+
+/* Reveal */
+function reveal(){
+  const els=document.querySelectorAll('.reveal:not(.in)');
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+  },{threshold:.12});
+  els.forEach(el=>io.observe(el));
+}
+
+/* Init */
+window.addEventListener('load',()=>{
+  renderChildren();
+  renderFAQs();
+  reveal();
+});
+</script>
+</body>
+</html>
