@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sewa SAC — Sponsor A Child. Educate a Child for $1 a Day.</title>
+<meta name="description" content="Sewa International's Sponsor A Child program provides holistic education, nutrition, and support to underprivileged children across India. Small change, big impact." />
+<meta property="og:title" content="Sewa SAC — Sponsor A Child" />
+<meta property="og:description" content="Educate a child for $1 a day. Join our community of change-makers." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          serif: ['Fraunces', 'Playfair Display', 'Georgia', 'serif'],
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          background: 'var(--background)',
+          foreground: 'var(--foreground)',
+          card: 'var(--card)',
+          'card-foreground': 'var(--card-foreground)',
+          primary: { DEFAULT: 'var(--primary)', foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          muted: { DEFAULT: 'var(--muted)', foreground: 'var(--muted-foreground)' },
+          accent: { DEFAULT: 'var(--accent)', foreground: 'var(--accent-foreground)' },
+          saffron: { DEFAULT: 'var(--saffron)', foreground: 'var(--saffron-foreground)' },
+          border: 'var(--border)',
+          input: 'var(--input)',
+          ring: 'var(--ring)',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  :root {
+    --background: oklch(0.99 0.005 90);
+    --foreground: oklch(0.18 0.04 265);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.18 0.04 265);
+    --primary: oklch(0.24 0.09 268);
+    --primary-foreground: oklch(0.98 0.005 90);
+    --secondary: oklch(0.95 0.01 90);
+    --secondary-foreground: oklch(0.24 0.09 268);
+    --muted: oklch(0.96 0.008 90);
+    --muted-foreground: oklch(0.48 0.02 260);
+    --accent: oklch(0.55 0.08 240);
+    --accent-foreground: oklch(0.98 0.005 90);
+    --saffron: oklch(0.72 0.18 55);
+    --saffron-foreground: oklch(0.99 0 0);
+    --border: oklch(0.9 0.01 90);
+    --input: oklch(0.9 0.01 90);
+    --ring: oklch(0.55 0.08 240);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 { font-family: 'Fraunces', 'Playfair Display', Georgia, serif; letter-spacing: -0.02em; }
+</style>
+</head>
+<body>
+<div class="min-h-screen bg-background text-foreground">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-background/85 backdrop-blur border-b border-border/60">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-serif text-lg">S</span>
+        <span class="font-serif text-lg font-semibold tracking-tight">Sewa <span class="text-saffron">SAC</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
+        <a href="#about" class="hover:text-foreground transition">About</a>
+        <a href="#sponsor" class="hover:text-foreground transition">Sponsor a Child</a>
+        <a href="#stories" class="hover:text-foreground transition">Success Stories</a>
+        <a href="#faq" class="hover:text-foreground transition">FAQs</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hidden sm:inline text-sm font-medium text-foreground hover:text-saffron transition">Donate</a>
+        <a href="#sponsor" class="inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold hover:opacity-90 transition">Sponsor A Child</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-24 grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <span class="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-saffron mb-6">Established 1989 · Sewa International</span>
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.02] text-primary">
+          Small change.<br />
+          Big impact.<br />
+          <span class="text-saffron italic">Educate a child.</span>
+        </h1>
+        <p class="mt-7 text-lg text-muted-foreground max-w-xl leading-relaxed">
+          The Sponsor A Child (SAC) program provides holistic education, nutrition, and medical support to underprivileged children across India — for just <span class="text-foreground font-semibold">$1 a day</span>.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="#sponsor" class="inline-flex items-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-semibold hover:opacity-90 transition">Sponsor for $1/day →</a>
+          <a href="#about" class="inline-flex items-center rounded-full border border-border bg-card px-7 py-3.5 text-sm font-semibold hover:bg-muted transition">How it works</a>
+        </div>
+        <div class="mt-10 flex items-center gap-8 text-sm text-muted-foreground">
+          <div><div class="font-serif text-3xl text-primary">36+</div><div>Years of service</div></div>
+          <div class="h-10 w-px bg-border"></div>
+          <div><div class="font-serif text-3xl text-primary">10K+</div><div>Children supported</div></div>
+          <div class="h-10 w-px bg-border"></div>
+          <div><div class="font-serif text-3xl text-primary">15</div><div>States in India</div></div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -top-6 -left-6 h-40 w-40 rounded-full bg-saffron/15 blur-2xl"></div>
+        <div class="absolute -bottom-8 -right-8 h-56 w-56 rounded-full bg-accent/15 blur-3xl"></div>
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-muted">
+          <img src="https://dkx8xz7sz3t1z.cloudfront.net/asset/27709/data/b6742d3c3c8f0fcb9700d9d49981d0e8.png" alt="Children of the Sewa SAC program" class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-card border border-border rounded-2xl shadow-xl p-5 max-w-[260px]">
+          <div class="font-serif italic text-primary leading-snug">"Because of my sponsor, I am the first in my family to attend secondary school."</div>
+          <div class="mt-3 text-xs font-semibold tracking-widest uppercase text-saffron">Ananya · Grade 8</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-secondary/60 border-y border-border">
+    <div class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[5/4] bg-muted shadow-lg">
+        <img src="https://dkx8xz7sz3t1z.cloudfront.net/asset/28711/data/26f3793d261f7cd6844297515819367c.png" alt="About the SAC program" class="h-full w-full object-cover" />
+      </div>
+      <div>
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-saffron">About the Program</span>
+        <h2 class="mt-3 font-serif text-4xl sm:text-5xl text-primary">Transforming lives, <span class="italic text-saffron">one child at a time.</span></h2>
+        <div class="mt-8 space-y-6 text-muted-foreground leading-relaxed">
+          <div class="flex gap-4"><span class="mt-2 h-2 w-2 rounded-full bg-saffron shrink-0"></span><p>Education, a fundamental right, often faces challenges like inadequate infrastructure, limited access, and financial constraints.</p></div>
+          <div class="flex gap-4"><span class="mt-2 h-2 w-2 rounded-full bg-saffron shrink-0"></span><p>India's alarming dropout rate — <span class="text-foreground font-semibold">12.6%</span> of students leave school prematurely, per the Indian National Statistical Office.</p></div>
+          <div class="flex gap-4"><span class="mt-2 h-2 w-2 rounded-full bg-saffron shrink-0"></span><p>Children from families affected by sudden tragedies — the loss of a breadwinner or a major health crisis — are particularly vulnerable.</p></div>
+        </div>
+        <a href="#" class="mt-8 inline-flex items-center gap-2 text-primary font-semibold hover:text-saffron transition">Read more about our mission →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSOR A CHILD -->
+  <section id="sponsor" class="max-w-7xl mx-auto px-6 py-24">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div>
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-saffron">Sponsor A Child</span>
+        <h2 class="mt-3 font-serif text-4xl sm:text-5xl text-primary">Meet the children<br /> waiting for a sponsor.</h2>
+      </div>
+      <a href="#" class="text-sm font-semibold text-primary hover:text-saffron transition">View all opportunities →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <article class="group rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-xl transition-shadow">
+        <div class="aspect-[4/5] overflow-hidden bg-muted"><img src="https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/218778/image/medium-a4ebb18f28c985cd3a1c9e658c27ab7f.jpeg" alt="Vidyasri" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" /></div>
+        <div class="p-5"><h3 class="font-serif text-xl text-primary">Vidyasri</h3><div class="mt-1 text-sm text-muted-foreground">Age 15 · Tamil Nadu</div><a href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-semibold py-2.5 hover:bg-saffron hover:text-saffron-foreground transition">Sponsor Me</a></div>
+      </article>
+      <article class="group rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-xl transition-shadow">
+        <div class="aspect-[4/5] overflow-hidden bg-muted"><img src="https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/235747/image/medium-0467c757c0d960b621f5b2b3644c0894.jpeg" alt="K. Shivavardhan" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" /></div>
+        <div class="p-5"><h3 class="font-serif text-xl text-primary">K. Shivavardhan</h3><div class="mt-1 text-sm text-muted-foreground">Age 13 · Telangana</div><a href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-semibold py-2.5 hover:bg-saffron hover:text-saffron-foreground transition">Sponsor Me</a></div>
+      </article>
+      <article class="group rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-xl transition-shadow">
+        <div class="aspect-[4/5] overflow-hidden bg-muted"><img src="https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/219272/image/medium-03e3c9193f8ed6025f0a576701a42078.jpeg" alt="P. Yagna Sri" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" /></div>
+        <div class="p-5"><h3 class="font-serif text-xl text-primary">P. Yagna Sri</h3><div class="mt-1 text-sm text-muted-foreground">Age 15 · Telangana</div><a href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-semibold py-2.5 hover:bg-saffron hover:text-saffron-foreground transition">Sponsor Me</a></div>
+      </article>
+      <article class="group rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-xl transition-shadow">
+        <div class="aspect-[4/5] overflow-hidden bg-muted"><img src="https://dkx8xz7sz3t1z.cloudfront.net/sponsorship/219159/image/medium-bfac03f928571c7fd543dd84e1103cbd.jpeg" alt="Vechha Mouthwika" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" /></div>
+        <div class="p-5"><h3 class="font-serif text-xl text-primary">Vechha Mouthwika</h3><div class="mt-1 text-sm text-muted-foreground">Age 15 · Telangana</div><a href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-semibold py-2.5 hover:bg-saffron hover:text-saffron-foreground transition">Sponsor Me</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="bg-primary text-primary-foreground">
+    <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
+      <div>
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-saffron">Featured Campaign</span>
+        <h2 class="mt-3 font-serif text-3xl sm:text-4xl">Stand with the Weavers of Karnataka.</h2>
+        <p class="mt-4 text-primary-foreground/75 leading-relaxed max-w-2xl">For generations, the skilled artisans of Karnataka have woven intricate fabrics that carry the soul of their communities. Today their children risk leaving school to help their families survive. Sponsor a weaver's child — help preserve a craft and a future.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row lg:flex-col gap-3">
+        <a href="#" class="inline-flex items-center justify-center rounded-full bg-saffron text-saffron-foreground px-6 py-3.5 text-sm font-semibold hover:opacity-90 transition">Support this campaign</a>
+        <a href="#" class="inline-flex items-center justify-center rounded-full border border-primary-foreground/25 px-6 py-3.5 text-sm font-semibold hover:bg-primary-foreground/10 transition">Learn about the weavers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS STORIES -->
+  <section id="stories" class="max-w-7xl mx-auto px-6 py-24">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-semibold tracking-[0.2em] uppercase text-saffron">Success Stories</span>
+      <h2 class="mt-3 font-serif text-4xl sm:text-5xl text-primary">Their stories, <span class="italic">their futures.</span></h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <article class="rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-lg transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden bg-muted"><img src="https://dkx8xz7sz3t1z.cloudfront.net/asset/27714/data/331024fa2828f82dd29251747a1c94b2.jpg" alt="Ananya" class="h-full w-full object-cover" /></div>
+        <div class="p-6"><h3 class="font-serif text-2xl text-primary">Ananya</h3><div class="mt-1 text-xs font-semibold tracking-widest uppercase text-muted-foreground">SAC ID: 22/KA/G-741</div><p class="mt-4 text-sm text-muted-foreground leading-relaxed">A bright student from a family of four. Her father, a milkman, and mother, a maid, work tirelessly to support the household. Despite hardship, Ananya excels in school.</p><a href="#" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-saffron transition">Read the full story →</a></div>
+      </article>
+      <article class="rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-lg transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden bg-muted"><img src="https://dkx8xz7sz3t1z.cloudfront.net/asset/27716/data/6277cde681d93f0c8675df35bac066cf.jpg" alt="Monica A." class="h-full w-full object-cover" /></div>
+        <div class="p-6"><h3 class="font-serif text-2xl text-primary">Monica A.</h3><div class="mt-1 text-xs font-semibold tracking-widest uppercase text-muted-foreground">SAC ID: 22/KA/G-1400</div><p class="mt-4 text-sm text-muted-foreground leading-relaxed">A brilliant student from a family struggling financially. Monica scored 99% and 97% in her exams — with a perfect score in Mathematics.</p><a href="#" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-saffron transition">Read the full story →</a></div>
+      </article>
+      <article class="rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-lg transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden bg-muted"><img src="https://dkx8xz7sz3t1z.cloudfront.net/asset/27715/data/a8f554cb67f3658ee01b8b342a94885d.jpg" alt="Kishor Gowda" class="h-full w-full object-cover" /></div>
+        <div class="p-6"><h3 class="font-serif text-2xl text-primary">Kishor Gowda</h3><div class="mt-1 text-xs font-semibold tracking-widest uppercase text-muted-foreground">SAC ID: 22/KA/B-86</div><p class="mt-4 text-sm text-muted-foreground leading-relaxed">After losing his father to COVID-19, Kishor's determination shines through. He scored 97% and 95% in his exams, lifting his family with academic excellence.</p><a href="#" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-saffron transition">Read the full story →</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="bg-secondary/60 border-y border-border">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="max-w-2xl mb-14">
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-saffron">Voices of our sponsors</span>
+        <h2 class="mt-3 font-serif text-4xl sm:text-5xl text-primary">Why they gave. <span class="italic">Why they stayed.</span></h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <figure class="rounded-2xl bg-card border border-border p-7 shadow-sm">
+          <blockquote class="font-serif text-lg text-primary leading-snug italic">"We are fortunate to sponsor two aspiring children from Madhya Pradesh. One wants to become a teacher, the other a collector. Seeing them work hard against all odds is deeply moving."</blockquote>
+          <figcaption class="mt-6 flex items-center gap-3">
+            <img src="https://s3.amazonaws.com/assets.reachapp.co/uploads/000/225/464/Shweta_Deshpande.original.jpeg?1639131280" alt="Shweta Deshpande" class="h-11 w-11 rounded-full object-cover" />
+            <div><div class="font-semibold text-foreground text-sm">Shweta Deshpande</div></div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-card border border-border p-7 shadow-sm">
+          <blockquote class="font-serif text-lg text-primary leading-snug italic">"It was so encouraging to see these children working hard to fulfil their dreams. We feel content to be part of their journey towards success."</blockquote>
+          <figcaption class="mt-6 flex items-center gap-3">
+            <img src="https://s3.amazonaws.com/assets.reachapp.co/assets/000/021/839/Nageswar_Rao_Pusulri_PIC.original.JPG?1627627560" alt="Nageswar Pusuluri" class="h-11 w-11 rounded-full object-cover" />
+            <div><div class="font-semibold text-foreground text-sm">Nageswar Pusuluri</div><div class="text-xs text-muted-foreground">New Jersey</div></div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-card border border-border p-7 shadow-sm">
+          <blockquote class="font-serif text-lg text-primary leading-snug italic">"I decided to sponsor the education of a girl child as a symbol of worshiping a living Lakshmi. Thank you SAC for this opportunity to serve."</blockquote>
+          <figcaption class="mt-6 flex items-center gap-3">
+            <img src="https://s3.amazonaws.com/assets.reachapp.co/assets/000/021/841/Mrunal_Koranne_pic.original.jpeg?1627627584" alt="Mrunal Koranne" class="h-11 w-11 rounded-full object-cover" />
+            <div><div class="font-semibold text-foreground text-sm">Mrunal Koranne</div><div class="text-xs text-muted-foreground">New Jersey</div></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="max-w-4xl mx-auto px-6 py-28 text-center">
+    <h2 class="font-serif text-4xl sm:text-6xl text-primary leading-tight">A dollar a day. <span class="italic text-saffron">A life transformed.</span></h2>
+    <p class="mt-6 text-lg text-muted-foreground max-w-xl mx-auto">Join thousands of change-makers who are rewriting a child's future — one school year at a time.</p>
+    <div class="mt-9 flex flex-wrap justify-center gap-4">
+      <a href="#sponsor" class="inline-flex items-center rounded-full bg-primary text-primary-foreground px-8 py-4 text-sm font-semibold hover:opacity-90 transition">Sponsor a child today</a>
+      <a href="#" class="inline-flex items-center rounded-full border border-border bg-card px-8 py-4 text-sm font-semibold hover:bg-muted transition">Make a one-time donation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-border bg-secondary/40">
+    <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between text-sm text-muted-foreground">
+      <div class="flex items-center gap-2">
+        <span class="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-serif">S</span>
+        <span class="font-serif text-base text-foreground">Sewa <span class="text-saffron">SAC</span></span>
+      </div>
+      <p>© <script>document.write(new Date().getFullYear())</script> Sewa International · Sponsor A Child program. All rights reserved.</p>
+      <div class="flex gap-5">
+        <a href="#" class="hover:text-foreground transition">Contact</a>
+        <a href="#" class="hover:text-foreground transition">Privacy</a>
+        <a href="#" class="hover:text-foreground transition">Newsroom</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
